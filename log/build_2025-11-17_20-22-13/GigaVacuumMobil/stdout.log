@@ -1,0 +1,37 @@
+[100%] Built target GigaVacuumMobil
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//GigaVacuumMobil.xml
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/lib/libGigaVacuumMobil.so
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/include/GigaVacuumMobil/GigaVacuumMobil/diffdrive_hardware.hpp
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//launch/gazebo.launch.py
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//launch/robot.launch.py
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//config/controllers.yaml
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//config/robot.rviz
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//config/robot_gazebo.rviz
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//urdf/GigaVacuumMobile.urdf.xacro
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//urdf/GigaVacuumMobile_gazebo.urdf.xacro
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//worlds/empty_world.sdf
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//worlds/test_world.sdf
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//arduino/encoder_motor_driver.ino
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/environment/library_path.sh
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/environment/library_path.dsv
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/ament_index/resource_index/package_run_dependencies/GigaVacuumMobil
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/ament_index/resource_index/parent_prefix_path/GigaVacuumMobil
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/environment/ament_prefix_path.sh
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/environment/ament_prefix_path.dsv
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/environment/path.sh
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/environment/path.dsv
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/local_setup.bash
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/local_setup.sh
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/local_setup.zsh
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/local_setup.dsv
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/package.dsv
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/ament_index/resource_index/packages/GigaVacuumMobil
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/GigaVacuumMobil
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/cmake/GigaVacuumMobilConfig.cmake
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/cmake/GigaVacuumMobilConfig-version.cmake
+-- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/package.xml

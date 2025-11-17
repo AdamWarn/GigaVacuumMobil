@@ -1,0 +1,3 @@
+source;share/GigaVacuumMobil/environment/ament_prefix_path.sh
+source;share/GigaVacuumMobil/environment/library_path.sh
+source;share/GigaVacuumMobil/environment/path.sh

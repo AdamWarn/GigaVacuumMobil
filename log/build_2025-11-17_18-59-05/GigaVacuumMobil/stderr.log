@@ -1,0 +1,8 @@
+WARNING: Package name "GigaVacuumMobil" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[01m[K/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil/src/diffdrive_hardware.cpp:1:10:[m[K [01;31m[Kfatal error: [m[KGigaVacuumMobil/diffdrive_hardware.hpp: No such file or directory
+    1 | #include [01;31m[K"GigaVacuumMobil/diffdrive_hardware.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/GigaVacuumMobil.dir/build.make:76: CMakeFiles/GigaVacuumMobil.dir/src/diffdrive_hardware.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/GigaVacuumMobil.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

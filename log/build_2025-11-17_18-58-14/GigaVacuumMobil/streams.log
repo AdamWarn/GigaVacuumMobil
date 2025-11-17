@@ -1,0 +1,23 @@
+[0.009s] Invoking command in '/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil -DCMAKE_INSTALL_PREFIX=/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil
+[0.026s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.170s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.238s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.281s] [31mCMake Error at CMakeLists.txt:10 (find_package):
+[0.281s]   By not providing "Findhardware_interface.cmake" in CMAKE_MODULE_PATH this
+[0.281s]   project has asked CMake to find a package configuration file provided by
+[0.281s]   "hardware_interface", but CMake did not find one.
+[0.282s] 
+[0.282s]   Could not find a package configuration file provided by
+[0.282s]   "hardware_interface" with any of the following names:
+[0.282s] 
+[0.282s]     hardware_interfaceConfig.cmake
+[0.282s]     hardware_interface-config.cmake
+[0.282s] 
+[0.282s]   Add the installation prefix of "hardware_interface" to CMAKE_PREFIX_PATH or
+[0.282s]   set "hardware_interface_DIR" to a directory containing one of the above
+[0.282s]   files.  If "hardware_interface" provides a separate development package or
+[0.282s]   SDK, be sure it has been installed.
+[0.282s] 
+[0.282s] [0m
+[0.282s] -- Configuring incomplete, errors occurred!
+[0.285s] Invoked command in '/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil -DCMAKE_INSTALL_PREFIX=/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil

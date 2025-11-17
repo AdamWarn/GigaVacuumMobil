@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-ec1b50ef66b15380d6de.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "GigaVacuumMobil",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "GigaVacuumMobil::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GigaVacuumMobil-49ed97e867963845c081.json",
+					"name" : "GigaVacuumMobil",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "GigaVacuumMobil_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GigaVacuumMobil_uninstall-6e67ea943b3ef8391cc3.json",
+					"name" : "GigaVacuumMobil_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-dd6c13af1a0a7bebc8f1.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil",
+		"source" : "/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

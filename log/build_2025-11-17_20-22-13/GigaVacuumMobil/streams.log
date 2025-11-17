@@ -1,0 +1,41 @@
+[0.011s] Invoking command in '/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil -- -j12 -l12
+[0.096s] [100%] Built target GigaVacuumMobil
+[0.113s] Invoked command in '/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil -- -j12 -l12
+[0.127s] Invoking command in '/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil
+[0.137s] -- Install configuration: ""
+[0.137s] -- Execute custom install script
+[0.138s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//GigaVacuumMobil.xml
+[0.150s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/lib/libGigaVacuumMobil.so
+[0.163s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/include/GigaVacuumMobil/GigaVacuumMobil/diffdrive_hardware.hpp
+[0.176s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//launch/gazebo.launch.py
+[0.189s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//launch/robot.launch.py
+[0.201s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//config/controllers.yaml
+[0.213s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//config/robot.rviz
+[0.227s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//config/robot_gazebo.rviz
+[0.241s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//urdf/GigaVacuumMobile.urdf.xacro
+[0.256s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//urdf/GigaVacuumMobile_gazebo.urdf.xacro
+[0.269s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//worlds/empty_world.sdf
+[0.281s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//worlds/test_world.sdf
+[0.294s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//arduino/encoder_motor_driver.ino
+[0.306s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/environment/library_path.sh
+[0.317s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/environment/library_path.dsv
+[0.330s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/ament_index/resource_index/package_run_dependencies/GigaVacuumMobil
+[0.342s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/ament_index/resource_index/parent_prefix_path/GigaVacuumMobil
+[0.355s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/environment/ament_prefix_path.sh
+[0.367s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/environment/ament_prefix_path.dsv
+[0.379s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/environment/path.sh
+[0.392s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/environment/path.dsv
+[0.403s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/local_setup.bash
+[0.415s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/local_setup.sh
+[0.428s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/local_setup.zsh
+[0.440s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/local_setup.dsv
+[0.451s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/package.dsv
+[0.464s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/ament_index/resource_index/packages/GigaVacuumMobil
+[0.476s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/GigaVacuumMobil
+[0.487s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.499s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/cmake/ament_cmake_export_libraries-extras.cmake
+[0.512s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.524s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/cmake/GigaVacuumMobilConfig.cmake
+[0.535s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/cmake/GigaVacuumMobilConfig-version.cmake
+[0.548s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/package.xml
+[0.563s] Invoked command in '/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil

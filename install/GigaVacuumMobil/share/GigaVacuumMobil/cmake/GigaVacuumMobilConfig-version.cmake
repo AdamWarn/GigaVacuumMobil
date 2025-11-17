@@ -1,0 +1,1 @@
+/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil/ament_cmake_core/GigaVacuumMobilConfig-version.cmake

@@ -1,0 +1,70 @@
+[0.009s] Invoking command in '/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil -- -j12 -l12
+[0.091s] [ 50%] Building CXX object CMakeFiles/GigaVacuumMobil.dir/src/diffdrive_hardware.cpp.o
+[2.555s] /home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil/src/diffdrive_hardware.cpp: In member function ‘virtual hardware_interface::CallbackReturn GigaVacuumMobil::DiffDriveHardware::on_init(const hardware_interface::HardwareInfo&)’:
+[2.555s] /home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil/src/diffdrive_hardware.cpp:25:49: warning: ‘virtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn hardware_interface::HardwareComponentInterface::on_init(const hardware_interface::HardwareInfo&)’ is deprecated: Use on_init(const HardwareComponentInterfaceParams & params) instead. [-Wdeprecated-declarations]
+[2.555s]    25 |     hardware_interface::SystemInterface::on_init(info) !=
+[2.555s]       |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+[2.555s] In file included from /opt/ros/jazzy/include/hardware_interface/hardware_interface/system_interface.hpp:18,
+[2.555s]                  from /home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil/include/GigaVacuumMobil/diffdrive_hardware.hpp:10,
+[2.555s]                  from /home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil/src/diffdrive_hardware.cpp:1:
+[2.555s] /opt/ros/jazzy/include/hardware_interface/hardware_interface/hardware_component_interface.hpp:226:26: note: declared here
+[2.555s]   226 |   virtual CallbackReturn on_init(const HardwareInfo & hardware_info)
+[2.555s]       |                          ^~~~~~~
+[3.700s] /home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil/include/GigaVacuumMobil/diffdrive_hardware.hpp: In instantiation of ‘B* class_loader::impl::MetaObject<C, B>::create() const [with C = GigaVacuumMobil::DiffDriveHardware; B = hardware_interface::SystemInterface]’:
+[3.701s] /opt/ros/jazzy/include/class_loader/class_loader/meta_object.hpp:216:7:   required from here
+[3.701s] /home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil/include/GigaVacuumMobil/diffdrive_hardware.hpp:20:7: warning: ‘control_toolbox::Pid::Pid(double, double, double, double, double, bool)’ is deprecated: Use constructor with AntiWindupStrategy only. [-Wdeprecated-declarations]
+[3.701s]    20 | class DiffDriveHardware : public hardware_interface::SystemInterface
+[3.701s]       |       ^~~~~~~~~~~~~~~~~
+[3.701s] In file included from /home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil/include/GigaVacuumMobil/diffdrive_hardware.hpp:16:
+[3.701s] /opt/ros/jazzy/include/control_toolbox/control_toolbox/pid.hpp:458:3: note: declared here
+[3.701s]   458 |   Pid(
+[3.701s]       |   ^~~
+[3.701s] /home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil/include/GigaVacuumMobil/diffdrive_hardware.hpp:20:7: warning: ‘control_toolbox::Pid::Pid(double, double, double, double, double, bool)’ is deprecated: Use constructor with AntiWindupStrategy only. [-Wdeprecated-declarations]
+[3.702s]    20 | class DiffDriveHardware : public hardware_interface::SystemInterface
+[3.702s]       |       ^~~~~~~~~~~~~~~~~
+[3.702s] /opt/ros/jazzy/include/control_toolbox/control_toolbox/pid.hpp:458:3: note: declared here
+[3.702s]   458 |   Pid(
+[3.702s]       |   ^~~
+[3.702s] In file included from /opt/ros/jazzy/include/class_loader/class_loader/class_loader_core.hpp:58,
+[3.702s]                  from /opt/ros/jazzy/include/class_loader/class_loader/class_loader.hpp:55,
+[3.702s]                  from /opt/ros/jazzy/include/pluginlib/pluginlib/class_list_macros.hpp:40,
+[3.702s]                  from /home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil/src/diffdrive_hardware.cpp:349:
+[3.702s] /opt/ros/jazzy/include/class_loader/class_loader/meta_object.hpp:218:12: note: synthesized method ‘GigaVacuumMobil::DiffDriveHardware::DiffDriveHardware()’ first required here
+[3.702s]   218 |     return new C;
+[3.702s]       |            ^~~~~
+[4.852s] [100%] Linking CXX shared library libGigaVacuumMobil.so
+[5.083s] [100%] Built target GigaVacuumMobil
+[5.096s] Invoked command in '/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil -- -j12 -l12
+[5.107s] Invoking command in '/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil
+[5.116s] -- Install configuration: ""
+[5.116s] -- Execute custom install script
+[5.117s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//GigaVacuumMobil.xml
+[5.127s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/lib/libGigaVacuumMobil.so
+[5.138s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/include/GigaVacuumMobil/GigaVacuumMobil/diffdrive_hardware.hpp
+[5.149s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//launch/robot.launch.py
+[5.159s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//config/controllers.yaml
+[5.170s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//config/robot.rviz
+[5.179s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//urdf/GigaVacuumMobile.urdf.xacro
+[5.190s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//arduino/encoder_motor_driver.ino
+[5.201s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/environment/library_path.sh
+[5.211s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/environment/library_path.dsv
+[5.221s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/ament_index/resource_index/package_run_dependencies/GigaVacuumMobil
+[5.232s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/ament_index/resource_index/parent_prefix_path/GigaVacuumMobil
+[5.241s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/environment/ament_prefix_path.sh
+[5.252s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/environment/ament_prefix_path.dsv
+[5.263s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/environment/path.sh
+[5.274s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/environment/path.dsv
+[5.283s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/local_setup.bash
+[5.294s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/local_setup.sh
+[5.305s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/local_setup.zsh
+[5.315s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/local_setup.dsv
+[5.326s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/package.dsv
+[5.337s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/ament_index/resource_index/packages/GigaVacuumMobil
+[5.347s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/GigaVacuumMobil
+[5.357s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.368s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/cmake/ament_cmake_export_libraries-extras.cmake
+[5.378s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.388s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/cmake/GigaVacuumMobilConfig.cmake
+[5.399s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/cmake/GigaVacuumMobilConfig-version.cmake
+[5.410s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/package.xml
+[5.423s] Invoked command in '/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil

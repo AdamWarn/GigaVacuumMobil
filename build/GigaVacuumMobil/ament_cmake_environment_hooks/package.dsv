@@ -1,0 +1,4 @@
+source;share/GigaVacuumMobil/local_setup.bash
+source;share/GigaVacuumMobil/local_setup.dsv
+source;share/GigaVacuumMobil/local_setup.sh
+source;share/GigaVacuumMobil/local_setup.zsh

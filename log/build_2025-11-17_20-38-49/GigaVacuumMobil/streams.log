@@ -1,0 +1,110 @@
+[0.010s] Invoking command in '/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil
+[0.078s] -- The C compiler identification is GNU 13.3.0
+[0.142s] -- The CXX compiler identification is GNU 13.3.0
+[0.162s] -- Detecting C compiler ABI info
+[0.267s] -- Detecting C compiler ABI info - done
+[0.276s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.277s] -- Detecting C compile features
+[0.277s] -- Detecting C compile features - done
+[0.289s] -- Detecting CXX compiler ABI info
+[0.407s] -- Detecting CXX compiler ABI info - done
+[0.417s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.417s] -- Detecting CXX compile features
+[0.418s] -- Detecting CXX compile features - done
+[0.424s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.589s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.657s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.727s] -- Found hardware_interface: 4.38.0 (/opt/ros/jazzy/share/hardware_interface/cmake)
+[0.805s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.828s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.854s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.882s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.164s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[1.231s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.237s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.273s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[1.358s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.362s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[1.382s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.385s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[1.396s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[1.409s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.756s] -- Found control_toolbox: 4.8.1 (/opt/ros/jazzy/share/control_toolbox/cmake)
+[1.849s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[1.850s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.850s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.966s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.038s] WARNING: Package name "GigaVacuumMobil" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[2.102s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.105s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.106s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil/include>
+[2.106s] -- Configured cppcheck exclude dirs and/or files: 
+[2.108s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.108s] -- Configured cpplint exclude dirs and/or files: 
+[2.110s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.110s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.111s] -- Added test 'lint_cmake' to check CMake code style
+[2.112s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.115s] -- Added test 'uncrustify' to check C / C++ code style
+[2.115s] -- Configured uncrustify additional arguments: 
+[2.116s] -- Added test 'xmllint' to check XML markup files
+[2.121s] -- Configuring done (2.1s)
+[2.151s] -- Generating done (0.0s)
+[2.156s] -- Build files have been written to: /home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil
+[2.170s] Invoked command in '/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil
+[2.171s] Invoking command in '/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil -- -j12 -l12
+[2.245s] [ 50%] [32mBuilding CXX object CMakeFiles/GigaVacuumMobil.dir/src/diffdrive_hardware.cpp.o[0m
+[4.818s] [01m[K/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil/src/diffdrive_hardware.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::CallbackReturn GigaVacuumMobil::DiffDriveHardware::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’:
+[4.819s] [01m[K/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil/src/diffdrive_hardware.cpp:25:49:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn hardware_interface::HardwareComponentInterface::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’ is deprecated: Use on_init(const HardwareComponentInterfaceParams & params) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[4.819s]    25 |     [01;35m[Khardware_interface::SystemInterface::on_init(info)[m[K !=
+[4.819s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[4.819s] In file included from [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/system_interface.hpp:18[m[K,
+[4.819s]                  from [01m[K/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil/include/GigaVacuumMobil/diffdrive_hardware.hpp:10[m[K,
+[4.819s]                  from [01m[K/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil/src/diffdrive_hardware.cpp:1[m[K:
+[4.819s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/hardware_component_interface.hpp:226:26:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.819s]   226 |   virtual CallbackReturn [01;36m[Kon_init[m[K(const HardwareInfo & hardware_info)
+[4.819s]       |                          [01;36m[K^~~~~~~[m[K
+[5.967s] /home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil/include/GigaVacuumMobil/diffdrive_hardware.hpp: In instantiation of ‘[01m[KB* class_loader::impl::MetaObject<C, B>::[01;32m[Kcreate[m[K() const [35m[K[with C = GigaVacuumMobil::DiffDriveHardware; B = hardware_interface::SystemInterface][m[K[m[K’:
+[5.967s] [01m[K/opt/ros/jazzy/include/class_loader/class_loader/meta_object.hpp:216:7:[m[K   required from here
+[5.967s] [01m[K/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil/include/GigaVacuumMobil/diffdrive_hardware.hpp:20:7:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcontrol_toolbox::Pid::[01;32m[KPid[m[K(double, double, double, double, double, bool)[m[K’ is deprecated: Use constructor with AntiWindupStrategy only. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[5.967s]    20 | class [01;35m[KDiffDriveHardware[m[K : public hardware_interface::SystemInterface
+[5.967s]       |       [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[5.967s] In file included from [01m[K/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil/include/GigaVacuumMobil/diffdrive_hardware.hpp:16[m[K:
+[5.968s] [01m[K/opt/ros/jazzy/include/control_toolbox/control_toolbox/pid.hpp:458:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.968s]   458 |   [01;36m[KPid[m[K(
+[5.968s]       |   [01;36m[K^~~[m[K
+[5.968s] [01m[K/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil/include/GigaVacuumMobil/diffdrive_hardware.hpp:20:7:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcontrol_toolbox::Pid::[01;32m[KPid[m[K(double, double, double, double, double, bool)[m[K’ is deprecated: Use constructor with AntiWindupStrategy only. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[5.968s]    20 | class [01;35m[KDiffDriveHardware[m[K : public hardware_interface::SystemInterface
+[5.968s]       |       [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[5.968s] [01m[K/opt/ros/jazzy/include/control_toolbox/control_toolbox/pid.hpp:458:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.968s]   458 |   [01;36m[KPid[m[K(
+[5.968s]       |   [01;36m[K^~~[m[K
+[5.968s] In file included from [01m[K/opt/ros/jazzy/include/class_loader/class_loader/class_loader_core.hpp:58[m[K,
+[5.968s]                  from [01m[K/opt/ros/jazzy/include/class_loader/class_loader/class_loader.hpp:55[m[K,
+[5.968s]                  from [01m[K/opt/ros/jazzy/include/pluginlib/pluginlib/class_list_macros.hpp:40[m[K,
+[5.968s]                  from [01m[K/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil/src/diffdrive_hardware.cpp:349[m[K:
+[5.969s] [01m[K/opt/ros/jazzy/include/class_loader/class_loader/meta_object.hpp:218:12:[m[K [01;36m[Knote: [m[Ksynthesized method ‘[01m[KGigaVacuumMobil::DiffDriveHardware::[01;32m[KDiffDriveHardware[m[K()[m[K’ first required here
+[5.969s]   218 |     return [01;36m[Knew C[m[K;
+[5.969s]       |            [01;36m[K^~~~~[m[K
+[7.097s] [100%] [32m[1mLinking CXX shared library libGigaVacuumMobil.so[0m
+[7.333s] [100%] Built target GigaVacuumMobil
+[7.348s] Invoked command in '/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil -- -j12 -l12
+[7.361s] Invoking command in '/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil
+[7.373s] -- Install configuration: ""
+[7.373s] -- Execute custom install script
+[7.373s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//GigaVacuumMobil.xml
+[7.387s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/lib/libGigaVacuumMobil.so
+[7.399s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/include/GigaVacuumMobil/GigaVacuumMobil/diffdrive_hardware.hpp
+[7.412s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//launch/robot.launch.py
+[7.425s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//config/controllers.yaml
+[7.436s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//config/robot.rviz
+[7.449s] -- Symlinking: /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//urdf/GigaVacuumMobile.urdf.xacro
+[7.462s] [31mCMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:100 (message):
+[7.462s]   ament_cmake_symlink_install_directory() can't find
+[7.462s]   '/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil/worlds'
+[7.462s] Call Stack (most recent call first):
+[7.462s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:332 (ament_cmake_symlink_install_directory)
+[7.462s]   cmake_install.cmake:46 (include)
+[7.462s] 
+[7.462s] [0m
+[7.464s] Invoked command in '/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil

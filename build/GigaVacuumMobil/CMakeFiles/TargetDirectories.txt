@@ -1,0 +1,10 @@
+/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil/CMakeFiles/uninstall.dir
+/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil/CMakeFiles/GigaVacuumMobil_uninstall.dir
+/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil/CMakeFiles/GigaVacuumMobil.dir
+/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil/CMakeFiles/test.dir
+/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil/CMakeFiles/edit_cache.dir
+/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil/CMakeFiles/rebuild_cache.dir
+/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil/CMakeFiles/list_install_components.dir
+/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil/CMakeFiles/install.dir
+/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil/CMakeFiles/install/local.dir
+/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil/CMakeFiles/install/strip.dir
