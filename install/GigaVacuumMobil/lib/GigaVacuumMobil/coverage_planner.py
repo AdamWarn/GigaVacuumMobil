@@ -1,0 +1,1 @@
+/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil/scripts/coverage_planner.py

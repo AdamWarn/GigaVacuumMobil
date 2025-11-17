@@ -22,11 +22,15 @@ diff_drive_controller:
 
     # Odometry settings
     publish_rate: 50.0
-    odom_frame_id: odom
-    base_frame_id: base_link
+    odom_frame_id: "odom"
+    base_frame_id: "base_link"
+    enable_odom_tf: true
     pose_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.01]
     twist_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.01]
     
+    # Open loop control (needed for proper frame_id publishing in some cases)
+    open_loop: false
+    
     # Command settings
     cmd_vel_timeout: 0.5 # seconds
-    use_stamped_vel: false
+    use_stamped_vel: true

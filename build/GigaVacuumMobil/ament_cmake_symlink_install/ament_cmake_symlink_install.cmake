@@ -322,11 +322,23 @@ ament_cmake_symlink_install_directory("/home/adam-warn/GigaVacuumMobil/src/GigaV
 # install(DIRECTORY "launch" "DESTINATION" "share/GigaVacuumMobil/")
 ament_cmake_symlink_install_directory("/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil" DIRECTORY "launch" "DESTINATION" "share/GigaVacuumMobil/")
 
+# install(PROGRAMS "scripts/cmd_vel_relay.py" "scripts/odom_frame_fixer.py" "scripts/coverage_planner.py" "scripts/cleaning_controller.py" "DESTINATION" "lib/GigaVacuumMobil")
+ament_cmake_symlink_install_programs("/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil" PROGRAMS "scripts/cmd_vel_relay.py" "scripts/odom_frame_fixer.py" "scripts/coverage_planner.py" "scripts/cleaning_controller.py" "DESTINATION" "lib/GigaVacuumMobil")
+
 # install(DIRECTORY "config" "DESTINATION" "share/GigaVacuumMobil/")
 ament_cmake_symlink_install_directory("/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil" DIRECTORY "config" "DESTINATION" "share/GigaVacuumMobil/")
 
 # install(DIRECTORY "urdf" "DESTINATION" "share/GigaVacuumMobil/")
 ament_cmake_symlink_install_directory("/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil" DIRECTORY "urdf" "DESTINATION" "share/GigaVacuumMobil/")
+
+# install(DIRECTORY "worlds" "DESTINATION" "share/GigaVacuumMobil/")
+ament_cmake_symlink_install_directory("/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil" DIRECTORY "worlds" "DESTINATION" "share/GigaVacuumMobil/")
+
+# install(DIRECTORY "rviz" "DESTINATION" "share/GigaVacuumMobil/")
+ament_cmake_symlink_install_directory("/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil" DIRECTORY "rviz" "DESTINATION" "share/GigaVacuumMobil/")
+
+# install(DIRECTORY "maps" "DESTINATION" "share/GigaVacuumMobil/")
+ament_cmake_symlink_install_directory("/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil" DIRECTORY "maps" "DESTINATION" "share/GigaVacuumMobil/")
 
 # install(DIRECTORY "arduino" "DESTINATION" "share/GigaVacuumMobil/")
 ament_cmake_symlink_install_directory("/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil" DIRECTORY "arduino" "DESTINATION" "share/GigaVacuumMobil/")

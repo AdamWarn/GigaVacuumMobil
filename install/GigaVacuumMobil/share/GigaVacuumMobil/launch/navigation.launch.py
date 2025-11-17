@@ -1,0 +1,1 @@
+/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil/launch/navigation.launch.py

@@ -1,1 +1,1 @@
-rclcpp;hardware_interface;pluginlib;controller_manager;ros2_controllers;control_toolbox;geometry_msgs;nav_msgs;sensor_msgs;ament_lint_auto;ament_lint_common
+rclcpp;rclpy;hardware_interface;pluginlib;controller_manager;ros2_controllers;control_toolbox;geometry_msgs;nav_msgs;sensor_msgs;ros_gz_sim;ros_gz_bridge;gz_ros2_control;cartographer_ros;nav2_bringup;nav2_msgs;navigation2;python3-numpy;python3-opencv;python3-scipy;xacro;robot_state_publisher;joint_state_publisher;rviz2;ament_lint_auto;ament_lint_common

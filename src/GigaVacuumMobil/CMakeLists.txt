@@ -56,6 +56,16 @@ install(
   DESTINATION share/${PROJECT_NAME}/
 )
 
+# Install scripts
+install(
+  PROGRAMS
+    scripts/cmd_vel_relay.py
+    scripts/odom_frame_fixer.py
+    scripts/coverage_planner.py
+    scripts/cleaning_controller.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 # Install config files
 install(
   DIRECTORY config
@@ -65,6 +75,24 @@ install(
 # Install URDF files
 install(
   DIRECTORY urdf
+  DESTINATION share/${PROJECT_NAME}/
+)
+
+# Install worlds directory for Gazebo
+install(
+  DIRECTORY worlds
+  DESTINATION share/${PROJECT_NAME}/
+)
+
+# Install rviz configs
+install(
+  DIRECTORY rviz
+  DESTINATION share/${PROJECT_NAME}/
+)
+
+# Install maps directory
+install(
+  DIRECTORY maps
   DESTINATION share/${PROJECT_NAME}/
 )
 

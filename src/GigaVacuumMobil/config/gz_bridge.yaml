@@ -1,0 +1,30 @@
+# Bridge configuration for ROS 2 and Gazebo communication
+# This file maps topics between Gazebo and ROS 2
+
+# Clock - Essential for simulation time synchronization
+- ros_topic_name: "/clock"
+  gz_topic_name: "/clock"
+  ros_type_name: "rosgraph_msgs/msg/Clock"
+  gz_type_name: "gz.msgs.Clock"
+  direction: GZ_TO_ROS
+
+# Lidar scan data
+- ros_topic_name: "/scan"
+  gz_topic_name: "/scan"
+  ros_type_name: "sensor_msgs/msg/LaserScan"
+  gz_type_name: "gz.msgs.LaserScan"
+  direction: GZ_TO_ROS
+
+# Odometry data (if using Gazebo's odometry publisher)
+- ros_topic_name: "/odom"
+  gz_topic_name: "/model/GigaVacuumMobil/odometry"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  direction: GZ_TO_ROS
+
+# TF transformations
+- ros_topic_name: "/tf"
+  gz_topic_name: "/model/GigaVacuumMobil/pose"
+  ros_type_name: "tf2_msgs/msg/TFMessage"
+  gz_type_name: "gz.msgs.Pose_V"
+  direction: GZ_TO_ROS

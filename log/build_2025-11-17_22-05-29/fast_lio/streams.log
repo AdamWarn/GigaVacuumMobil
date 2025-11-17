@@ -1,0 +1,51 @@
+[0.011s] Invoking command in '/home/adam-warn/GigaVacuumMobil/build/fast_lio': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/adam-warn/GigaVacuumMobil/src/FAST_LIO -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/adam-warn/GigaVacuumMobil/install/fast_lio
+[0.021s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.021s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[0.021s]   CMake.
+[0.021s] 
+[0.021s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.021s]   CMake that the project does not need compatibility with older versions.
+[0.022s] 
+[0.022s] [0m
+[0.079s] -- The C compiler identification is GNU 13.3.0
+[0.147s] -- The CXX compiler identification is GNU 13.3.0
+[0.168s] -- Detecting C compiler ABI info
+[0.274s] -- Detecting C compiler ABI info - done
+[0.285s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.285s] -- Detecting C compile features
+[0.286s] -- Detecting C compile features - done
+[0.297s] -- Detecting CXX compiler ABI info
+[0.415s] -- Detecting CXX compiler ABI info - done
+[0.426s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.427s] -- Detecting CXX compile features
+[0.427s] -- Detecting CXX compile features - done
+[0.428s] [0mCurrent CPU archtecture: x86_64[0m
+[0.437s] [0mProcesser number:  12[0m
+[0.437s] [0mcore for MP: 3[0m
+[0.926s] [33mCMake Warning (dev) at CMakeLists.txt:42 (find_package):
+[0.926s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.926s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.926s]   the cmake_policy command to set the policy and suppress this warning.
+[0.926s] 
+[0.926s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.926s] [0m
+[0.956s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.12.so (found version "3.12.3") 
+[0.972s] [31mCMake Error at CMakeLists.txt:45 (find_package):
+[0.972s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.972s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.972s]   CMake did not find one.
+[0.972s] 
+[0.972s]   Could not find a package configuration file provided by "catkin" with any
+[0.972s]   of the following names:
+[0.972s] 
+[0.972s]     catkinConfig.cmake
+[0.972s]     catkin-config.cmake
+[0.972s] 
+[0.972s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.973s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.973s]   provides a separate development package or SDK, be sure it has been
+[0.973s]   installed.
+[0.973s] 
+[0.973s] [0m
+[0.973s] -- Configuring incomplete, errors occurred!
+[0.979s] Invoked command in '/home/adam-warn/GigaVacuumMobil/build/fast_lio' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/adam-warn/GigaVacuumMobil/src/FAST_LIO -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/adam-warn/GigaVacuumMobil/install/fast_lio
