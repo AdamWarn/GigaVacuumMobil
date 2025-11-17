@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="GigaVacuumMobil">
+
+    <!-- Robot constants - UPDATE THESE TO MATCH YOUR ACTUAL ROBOT -->
+    <xacro:property name="wheel_radius" value="0.033" /> <!-- 3.3 cm -->
+    <xacro:property name="wheel_separation" value="0.17" /> <!-- 17 cm between wheels -->
+    <xacro:property name="wheel_width" value="0.02" />
+    <xacro:property name="base_length" value="0.20" />
+    <xacro:property name="base_width" value="0.15" />
+    <xacro:property name="base_height" value="0.01" />
+    <xacro:property name="lidar_offset_x" value="0.05" />
+    <xacro:property name="lidar_offset_z" value="0.10" />
+
+    <!-- Base Link -->
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <box size="${base_length} ${base_width} ${base_height}" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <material name="blue">
+                <color rgba="0.0 0.0 1.0 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="${base_length} ${base_width} ${base_height}" />
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- Right Wheel -->
+    <link name="right_wheel_link">
+        <visual>
+            <geometry>
+                <cylinder radius="${wheel_radius}" length="${wheel_width}" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.5707 0 0" />
+            <material name="black">
+                <color rgba="0.0 0.0 0.0 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder radius="${wheel_radius}" length="${wheel_width}" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.5707 0 0" />
+        </collision>
+    </link>
+
+    <joint name="right_wheel_joint" type="continuous">
+        <parent link="base_link" />
+        <child link="right_wheel_link" />
+        <origin xyz="0 ${-wheel_separation/2} 0" rpy="0 0 0" />
+        <axis xyz="0 1 0" />
+    </joint>
+
+    <!-- Left Wheel -->
+    <link name="left_wheel_link">
+        <visual>
+            <geometry>
+                <cylinder radius="${wheel_radius}" length="${wheel_width}" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.5707 0 0" />
+            <material name="black"/>
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder radius="${wheel_radius}" length="${wheel_width}" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.5707 0 0" />
+        </collision>
+    </link>
+
+    <joint name="left_wheel_joint" type="continuous">
+        <parent link="base_link" />
+        <child link="left_wheel_link" />
+        <origin xyz="0 ${wheel_separation/2} 0" rpy="0 0 0" />
+        <axis xyz="0 1 0" />
+    </joint>
+
+    <!-- Lidar Sensor (RPLIDAR C1) -->
+    <link name="lidar_link">
+        <visual>
+            <geometry>
+                <cylinder radius="0.05" length="0.04"/>
+            </geometry>
+            <material name="red">
+                <color rgba="1.0 0.0 0.0 1.0" />
+            </material>
+        </visual>
+    </link>
+
+    <joint name="lidar_joint" type="fixed">
+        <parent link="base_link" />
+        <child link="lidar_link" />
+        <origin xyz="${lidar_offset_x} 0 ${lidar_offset_z}" rpy="0 0 0" />
+    </joint>
+
+    <!-- =================================================================== -->
+    <!-- |                      ROS2 Control Plugin                        | -->
+    <!-- =================================================================== -->
+    <ros2_control name="GigaVacuumMobil" type="system">
+        <hardware>
+            <plugin>GigaVacuumMobil/DiffDriveHardware</plugin>
+            <!-- Parameters for your hardware interface -->
+            <param name="device">/dev/ttyUSB0</param>
+            <param name="baud_rate">57600</param>
+            <param name="timeout_ms">100</param>
+            <param name="enc_ticks_per_rev">2400</param> <!-- UPDATE THIS! -->
+        </hardware>
+        
+        <!-- Define the joints that this hardware interface controls -->
+        <joint name="left_wheel_joint">
+            <command_interface name="velocity"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="right_wheel_joint">
+            <command_interface name="velocity"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+    </ros2_control>
+
+</robot>

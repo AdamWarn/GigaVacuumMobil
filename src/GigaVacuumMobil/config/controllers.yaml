@@ -1,0 +1,32 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 50  # Hz
+
+    # Controller for publishing joint states
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    # The main differential drive controller
+    diff_drive_controller:
+      type: diff_drive_controller/DiffDriveController
+
+diff_drive_controller:
+  ros__parameters:
+    # Names of the joints to control
+    left_wheel_names: ["left_wheel_joint"]
+    right_wheel_names: ["right_wheel_joint"]
+    
+    # Physical robot parameters. MUST MATCH URDF!
+    wheel_separation: 0.17 
+    wheel_radius: 0.033
+
+    # Odometry settings
+    publish_rate: 50.0
+    odom_frame_id: odom
+    base_frame_id: base_link
+    pose_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.01]
+    twist_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.01]
+    
+    # Command settings
+    cmd_vel_timeout: 0.5 # seconds
+    use_stamped_vel: false
