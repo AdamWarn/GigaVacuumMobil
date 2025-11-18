@@ -20,6 +20,12 @@ A ROS 2 Jazzy package for controlling a differential drive robot with `ros2_cont
 8. [Troubleshooting](#troubleshooting)
 9. [Tuning Guide](#tuning-guide)
 
+## Additional Guides
+
+- **[GAZEBO_GUIDE.md](GAZEBO_GUIDE.md)** - Simulation setup and testing
+- **[SLAM_GUIDE.md](SLAM_GUIDE.md)** - Mapping with Cartographer
+- **[NAVIGATION_GUIDE.md](NAVIGATION_GUIDE.md)** - Autonomous navigation and systematic cleaning
+
 ---
 
 ## Hardware Overview

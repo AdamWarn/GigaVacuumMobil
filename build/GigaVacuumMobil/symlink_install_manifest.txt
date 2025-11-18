@@ -2,7 +2,7 @@
 /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/lib/libGigaVacuumMobil.so
 /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/include/GigaVacuumMobil/GigaVacuumMobil/diffdrive_hardware.hpp
 /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//launch/gazebo.launch.py
-/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//launch/navigation.launch.py
+/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//launch/navigation_simple.launch.py
 /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//launch/robot.launch.py
 /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//launch/slam.launch.py
 /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/lib/GigaVacuumMobil/cmd_vel_relay.py
@@ -16,7 +16,10 @@
 /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//config/robot.rviz
 /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//urdf/GigaVacuumMobile.urdf.xacro
 /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//worlds/vacuum_world.sdf
+/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//rviz/navigation.rviz
 /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//rviz/slam.rviz
+/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//maps/my_map.pgm
+/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//maps/my_map.yaml
 /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil//arduino/encoder_motor_driver.ino
 /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/environment/library_path.sh
 /home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/environment/library_path.dsv

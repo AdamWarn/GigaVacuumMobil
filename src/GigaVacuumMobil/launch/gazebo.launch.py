@@ -33,8 +33,8 @@ def generate_launch_description():
     declared_arguments.append(
         DeclareLaunchArgument(
             'use_rviz',
-            default_value='true',
-            description='Start RViz2 for visualization',
+            default_value='false',
+            description='Start RViz for visualization (disable if using navigation launch)',
         )
     )
     
