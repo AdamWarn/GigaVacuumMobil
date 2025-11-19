@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/cleaning_planner/cleaning_planner.egg-info/PKG-INFO
+writing dependency_links to ../../build/cleaning_planner/cleaning_planner.egg-info/dependency_links.txt
+writing entry points to ../../build/cleaning_planner/cleaning_planner.egg-info/entry_points.txt
+writing requirements to ../../build/cleaning_planner/cleaning_planner.egg-info/requires.txt
+writing top-level names to ../../build/cleaning_planner/cleaning_planner.egg-info/top_level.txt
+reading manifest file '../../build/cleaning_planner/cleaning_planner.egg-info/SOURCES.txt'
+writing manifest file '../../build/cleaning_planner/cleaning_planner.egg-info/SOURCES.txt'
+running build
+running build_py
+copying cleaning_planner/waypoint_generator.py -> /home/adam-warn/GigaVacuumMobil/build/cleaning_planner/build/lib/cleaning_planner
+running install
+running install_lib
+copying /home/adam-warn/GigaVacuumMobil/build/cleaning_planner/build/lib/cleaning_planner/waypoint_generator.py -> /home/adam-warn/GigaVacuumMobil/install/cleaning_planner/lib/python3.12/site-packages/cleaning_planner
+byte-compiling /home/adam-warn/GigaVacuumMobil/install/cleaning_planner/lib/python3.12/site-packages/cleaning_planner/waypoint_generator.py to waypoint_generator.cpython-312.pyc
+running install_data
+running install_egg_info
+removing '/home/adam-warn/GigaVacuumMobil/install/cleaning_planner/lib/python3.12/site-packages/cleaning_planner-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/cleaning_planner/cleaning_planner.egg-info to /home/adam-warn/GigaVacuumMobil/install/cleaning_planner/lib/python3.12/site-packages/cleaning_planner-0.0.0-py3.12.egg-info
+running install_scripts
+Installing waypoint_generator script to /home/adam-warn/GigaVacuumMobil/install/cleaning_planner/lib/cleaning_planner
+writing list of installed files to '/home/adam-warn/GigaVacuumMobil/build/cleaning_planner/install.log'

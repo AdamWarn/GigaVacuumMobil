@@ -1,0 +1,37 @@
+[1.268s] Invoking command in '/home/adam-warn/GigaVacuumMobil/src/cleaning_planner': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/adam-warn/GigaVacuumMobil/build/cleaning_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adam-warn/GigaVacuumMobil/install/cleaning_planner/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cleaning_planner build --build-base /home/adam-warn/GigaVacuumMobil/build/cleaning_planner/build install --record /home/adam-warn/GigaVacuumMobil/build/cleaning_planner/install.log --single-version-externally-managed install_data
+[1.631s] running egg_info
+[1.632s] creating ../../build/cleaning_planner/cleaning_planner.egg-info
+[1.661s] writing ../../build/cleaning_planner/cleaning_planner.egg-info/PKG-INFO
+[1.662s] writing dependency_links to ../../build/cleaning_planner/cleaning_planner.egg-info/dependency_links.txt
+[1.662s] writing entry points to ../../build/cleaning_planner/cleaning_planner.egg-info/entry_points.txt
+[1.662s] writing requirements to ../../build/cleaning_planner/cleaning_planner.egg-info/requires.txt
+[1.663s] writing top-level names to ../../build/cleaning_planner/cleaning_planner.egg-info/top_level.txt
+[1.663s] writing manifest file '../../build/cleaning_planner/cleaning_planner.egg-info/SOURCES.txt'
+[1.721s] reading manifest file '../../build/cleaning_planner/cleaning_planner.egg-info/SOURCES.txt'
+[1.722s] writing manifest file '../../build/cleaning_planner/cleaning_planner.egg-info/SOURCES.txt'
+[1.722s] running build
+[1.722s] running build_py
+[1.722s] creating /home/adam-warn/GigaVacuumMobil/build/cleaning_planner/build
+[1.723s] creating /home/adam-warn/GigaVacuumMobil/build/cleaning_planner/build/lib
+[1.723s] creating /home/adam-warn/GigaVacuumMobil/build/cleaning_planner/build/lib/cleaning_planner
+[1.723s] copying cleaning_planner/waypoint_generator.py -> /home/adam-warn/GigaVacuumMobil/build/cleaning_planner/build/lib/cleaning_planner
+[1.723s] copying cleaning_planner/__init__.py -> /home/adam-warn/GigaVacuumMobil/build/cleaning_planner/build/lib/cleaning_planner
+[1.723s] running install
+[1.732s] running install_lib
+[1.759s] creating /home/adam-warn/GigaVacuumMobil/install/cleaning_planner/lib/python3.12/site-packages/cleaning_planner
+[1.760s] copying /home/adam-warn/GigaVacuumMobil/build/cleaning_planner/build/lib/cleaning_planner/waypoint_generator.py -> /home/adam-warn/GigaVacuumMobil/install/cleaning_planner/lib/python3.12/site-packages/cleaning_planner
+[1.760s] copying /home/adam-warn/GigaVacuumMobil/build/cleaning_planner/build/lib/cleaning_planner/__init__.py -> /home/adam-warn/GigaVacuumMobil/install/cleaning_planner/lib/python3.12/site-packages/cleaning_planner
+[1.760s] byte-compiling /home/adam-warn/GigaVacuumMobil/install/cleaning_planner/lib/python3.12/site-packages/cleaning_planner/waypoint_generator.py to waypoint_generator.cpython-312.pyc
+[1.764s] byte-compiling /home/adam-warn/GigaVacuumMobil/install/cleaning_planner/lib/python3.12/site-packages/cleaning_planner/__init__.py to __init__.cpython-312.pyc
+[1.764s] running install_data
+[1.764s] creating /home/adam-warn/GigaVacuumMobil/install/cleaning_planner/share/ament_index
+[1.765s] creating /home/adam-warn/GigaVacuumMobil/install/cleaning_planner/share/ament_index/resource_index
+[1.765s] creating /home/adam-warn/GigaVacuumMobil/install/cleaning_planner/share/ament_index/resource_index/packages
+[1.765s] copying resource/cleaning_planner -> /home/adam-warn/GigaVacuumMobil/install/cleaning_planner/share/ament_index/resource_index/packages
+[1.766s] copying package.xml -> /home/adam-warn/GigaVacuumMobil/install/cleaning_planner/share/cleaning_planner
+[1.766s] running install_egg_info
+[1.796s] Copying ../../build/cleaning_planner/cleaning_planner.egg-info to /home/adam-warn/GigaVacuumMobil/install/cleaning_planner/lib/python3.12/site-packages/cleaning_planner-0.0.0-py3.12.egg-info
+[1.797s] running install_scripts
+[2.000s] Installing waypoint_generator script to /home/adam-warn/GigaVacuumMobil/install/cleaning_planner/lib/cleaning_planner
+[2.000s] writing list of installed files to '/home/adam-warn/GigaVacuumMobil/build/cleaning_planner/install.log'
+[2.051s] Invoked command in '/home/adam-warn/GigaVacuumMobil/src/cleaning_planner' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/adam-warn/GigaVacuumMobil/build/cleaning_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adam-warn/GigaVacuumMobil/install/cleaning_planner/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cleaning_planner build --build-base /home/adam-warn/GigaVacuumMobil/build/cleaning_planner/build install --record /home/adam-warn/GigaVacuumMobil/build/cleaning_planner/install.log --single-version-externally-managed install_data

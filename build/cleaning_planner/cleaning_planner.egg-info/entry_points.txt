@@ -1,0 +1,2 @@
+[console_scripts]
+waypoint_generator = cleaning_planner.waypoint_generator:main

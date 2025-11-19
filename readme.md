@@ -598,6 +598,25 @@ ros2 topic echo /joint_states
 ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.2, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}"
 ```
 
+### Systematic Waypoint Generator
+
+Use the `cleaning_planner` package to create Nav2-compatible coverage routes from any saved map:
+
+```bash
+source ~/GigaVacuumMobil/setup_env.sh
+ros2 run cleaning_planner waypoint_generator \
+   --map-file src/GigaVacuumMobil/maps/my_map.yaml \
+   --row-spacing 0.5 \
+   --boundary-laps 1 \
+   --orientation-mode identity \
+   --safety-margin 0.1 \
+   --output-file waypoints.yaml
+```
+
+- `--orientation-mode identity` keeps quaternions neutral for the Nav2 waypoint follower.
+- `--safety-margin` (meters) shrinks the free space before planning; increase it if RViz shows waypoints grazing walls.
+- Generated YAML matches the Nav2 waypoint plugin format, so you can load it directly in RViz or feed it to the waypoint follower node.
+
 ---
 
 ## File Structure Reference

@@ -412,6 +412,9 @@ builtin_interfaces_DIR:PATH=/opt/ros/jazzy/share/builtin_interfaces/cmake
 //The directory containing a CMake configuration file for class_loader.
 class_loader_DIR:PATH=/opt/ros/jazzy/share/class_loader/cmake
 
+//The directory containing a CMake configuration file for cleaning_planner.
+cleaning_planner_DIR:PATH=cleaning_planner_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for composition_interfaces.
 composition_interfaces_DIR:PATH=/opt/ros/jazzy/share/composition_interfaces/cmake
 

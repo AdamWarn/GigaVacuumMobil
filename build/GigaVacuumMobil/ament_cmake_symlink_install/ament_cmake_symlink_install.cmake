@@ -322,8 +322,8 @@ ament_cmake_symlink_install_directory("/home/adam-warn/GigaVacuumMobil/src/GigaV
 # install(DIRECTORY "launch" "DESTINATION" "share/GigaVacuumMobil/")
 ament_cmake_symlink_install_directory("/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil" DIRECTORY "launch" "DESTINATION" "share/GigaVacuumMobil/")
 
-# install(PROGRAMS "scripts/cmd_vel_relay.py" "scripts/odom_frame_fixer.py" "scripts/coverage_planner.py" "scripts/cleaning_controller.py" "DESTINATION" "lib/GigaVacuumMobil")
-ament_cmake_symlink_install_programs("/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil" PROGRAMS "scripts/cmd_vel_relay.py" "scripts/odom_frame_fixer.py" "scripts/coverage_planner.py" "scripts/cleaning_controller.py" "DESTINATION" "lib/GigaVacuumMobil")
+# install(PROGRAMS "scripts/cmd_vel_relay.py" "scripts/odom_frame_fixer.py" "DESTINATION" "lib/GigaVacuumMobil")
+ament_cmake_symlink_install_programs("/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil" PROGRAMS "scripts/cmd_vel_relay.py" "scripts/odom_frame_fixer.py" "DESTINATION" "lib/GigaVacuumMobil")
 
 # install(DIRECTORY "config" "DESTINATION" "share/GigaVacuumMobil/")
 ament_cmake_symlink_install_directory("/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil" DIRECTORY "config" "DESTINATION" "share/GigaVacuumMobil/")

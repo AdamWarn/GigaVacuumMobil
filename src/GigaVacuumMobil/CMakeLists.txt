@@ -61,8 +61,6 @@ install(
   PROGRAMS
     scripts/cmd_vel_relay.py
     scripts/odom_frame_fixer.py
-    scripts/coverage_planner.py
-    scripts/cleaning_controller.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
