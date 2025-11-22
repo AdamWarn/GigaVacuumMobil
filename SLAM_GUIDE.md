@@ -24,10 +24,10 @@ Launch Gazebo with the robot:
 ros2 launch GigaVacuumMobil gazebo.launch.py
 ```
 
-In a new terminal, launch SLAM:
+In a new terminal, launch SLAM (Cartographer publishes `/map` and TF):
 ```bash
 source install/setup.bash
-ros2 launch GigaVacuumMobil slam.launch.py
+ros2 launch GigaVacuumMobil slam.launch.py use_rviz:=false
 ```
 
 ### 3. Control the Robot
@@ -51,19 +51,19 @@ ros2 launch GigaVacuumMobil slam.launch.py use_sim_time:=false
 
 ## Saving Maps
 
-### Save the map created by Cartographer:
+### Save the map created by Cartographer
+
+You can still save manually:
 
 ```bash
-# Finish the trajectory
+# Finish the trajectory (if running pure SLAM)
 ros2 service call /finish_trajectory cartographer_ros_msgs/srv/FinishTrajectory "{trajectory_id: 0}"
 
-# Save the map
+# Save the map once
 ros2 run nav2_map_server map_saver_cli -f ~/my_map
 ```
 
-This creates two files:
-- `my_map.pgm` - The map image
-- `my_map.yaml` - Map metadata
+But for day-to-day runs *let the map updater do it for you* (see "Continuous Mapping" below).
 
 ## Launch File Arguments
 
@@ -83,10 +83,12 @@ ros2 launch GigaVacuumMobil slam.launch.py use_sim_time:=false resolution:=0.03
 ### Cartographer Configuration
 Located at: `config/cartographer.lua`
 
-Key parameters:
-- `min_range`: 0.12m (matches RPLIDAR C1 specs)
-- `max_range`: 12.0m
-- `resolution`: 0.05m grid size
+Key parameters (tailored for crisp walls):
+- `min_range`: 0.12 m (matches RPLIDAR C1 specs)
+- `max_range`: 10.0 m (drops far returns that tended to carve holes)
+- `resolution`: 0.04 m grid size
+- `missing_data_ray_length`: 1.8 m so unseen space stays unknown rather than instantly cleared
+- `range_data_inserter.hit_probability/miss_probability`: 0.75 / 0.35 so hits accumulate quickly and freespace takes sustained evidence
 - `use_odometry`: true (uses wheel odometry from diff_drive_controller)
 
 ## Topics
@@ -143,8 +145,9 @@ Key parameters:
 **Solutions**:
 1. Drive slower - fast turns can cause drift
 2. Adjust Cartographer parameters in `config/cartographer.lua`:
-   - Increase `occupied_space_weight` for sharper features
-   - Decrease `resolution` for finer detail
+   - Raise `range_data_inserter.hit_probability` or lower `miss_probability` if walls erode too fast
+   - Decrease `resolution` (currently 0.04 m) for finer detail, but keep it aligned with Nav2 costmap resolution
+   - Reduce `missing_data_ray_length` or `max_range` if distant measurements keep punching holes through walls
 3. Ensure good lidar visibility - avoid reflective surfaces
 
 ### TF Errors
@@ -189,15 +192,45 @@ To use an existing map for localization:
 - Increase `optimize_every_n_nodes`
 - Use `real_time_correlative_scan_matcher`
 
+## Continuous Mapping + Automatic Saves
+
+The `map_maintenance` package keeps `/map` fresh and saves snapshots automatically:
+
+```bash
+source install/setup.bash
+ros2 run map_maintenance map_updater_node \
+   --ros-args -p map_topic:=/map \
+            -p save_directory:=~/GigaVacuumMobil_maps \
+            -p save_period:=30.0
+```
+
+- Every 30 seconds it writes `~/GigaVacuumMobil_maps/live_map_YYYYmmdd_HHMMSS.(pgm|yaml)`.
+- It also refreshes `~/GigaVacuumMobil_maps/current_map.yaml`, which the navigation stack and coverage planner can reload on the next boot.
+
+## Unified SLAM → Navigation → Cleaning
+
+Run the entire pipeline (Cartographer + map updater + Nav2 + coverage planner/executor) in one command:
+
+```bash
+source install/setup.bash
+ros2 launch GigaVacuumMobil full_cleaning.launch.py \
+   map_save_directory:=~/GigaVacuumMobil_maps \
+   map_yaml:=~/GigaVacuumMobil_maps/current_map.yaml \
+   poses_per_goal:=8
+```
+
+What this launch file does:
+- Starts Cartographer (if `enable_slam:=true`) to keep `/map` and TF live.
+- Runs `map_updater_node` so the latest occupancy grid is persisted to disk.
+- Brings up Nav2 in SLAM mode (no AMCL or static map server required) so the robot can navigate immediately.
+- Starts the cleaning planner/executor, which now watches `/map` for updates and continuously feeds bite-sized NavigateThroughPoses goals until coverage is complete.
+
+If a saved map already exists, Nav2 and the planner will preload it while they wait for fresh SLAM data. If no map exists yet, they simply wait for the first `/map` message before planning.
+
 ## Next Steps
 
-After creating a map, you can:
-1. Use Nav2 for autonomous navigation
-2. Set waypoints for patrol routes
-3. Implement obstacle avoidance
-4. Add localization with AMCL
-
-See `NAVIGATION_GUIDE.md` for navigation setup (coming soon).
+- See `NAVIGATION_GUIDE.md` for navigation tuning and the new full-stack workflow.
+- Use the coverage planner launch arguments (`row_spacing`, `boundary_laps`, `poses_per_goal`) to match the environment.
 
 ## References
 

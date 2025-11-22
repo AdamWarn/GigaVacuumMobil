@@ -24,6 +24,8 @@ setup(
     entry_points={
         'console_scripts': [
             'waypoint_generator = cleaning_planner.waypoint_generator:main',
+            'coverage_planner_node = cleaning_planner.coverage_planner_node:main',
+            'coverage_executor_node = cleaning_planner.coverage_executor_node:main',
         ],
     },
 )

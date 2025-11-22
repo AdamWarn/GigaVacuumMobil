@@ -10,6 +10,9 @@
   <depend>rclpy</depend>
   <depend>nav_msgs</depend>
   <depend>geometry_msgs</depend>
+  <depend>std_srvs</depend>
+  <depend>action_msgs</depend>
+  <depend>nav2_msgs</depend>
   <depend>numpy</depend>
   <depend>scikit-learn</depend>
   <depend>pyyaml</depend>

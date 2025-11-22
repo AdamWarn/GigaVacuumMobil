@@ -4,10 +4,11 @@ import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, TimerAction
-from launch.conditions import IfCondition
+from launch.conditions import IfCondition, UnlessCondition
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
+from nav2_common.launch import RewrittenYaml
 
 def generate_launch_description():
     # Package directories
@@ -36,15 +37,50 @@ def generate_launch_description():
             description='Whether to start RViz'
         )
     )
+    declared_arguments.append(
+        DeclareLaunchArgument(
+            'use_slam',
+            default_value='False',
+            description='Skip static map server/AMCL and rely on live SLAM map if true'
+        )
+    )
+    declared_arguments.append(
+        DeclareLaunchArgument(
+            'map_yaml',
+            default_value=PathJoinSubstitution([
+                FindPackageShare('GigaVacuumMobil'),
+                'maps',
+                'current_map.yaml'
+            ]),
+            description='Saved map to load when not running SLAM'
+        )
+    )
+    declared_arguments.append(
+        DeclareLaunchArgument(
+            'static_map_topic',
+            default_value='/map',
+            description='Costmap static layer topic (set to filtered map if available)'
+        )
+    )
     
     # Get launch configurations
     use_sim_time = LaunchConfiguration('use_sim_time')
     autostart = LaunchConfiguration('autostart')
     use_rviz = LaunchConfiguration('use_rviz')
+    use_slam = LaunchConfiguration('use_slam')
+    map_yaml = LaunchConfiguration('map_yaml')
+    static_map_topic = LaunchConfiguration('static_map_topic')
     
     # Paths
     params_file = os.path.join(pkg_share, 'config', 'nav2_params.yaml')
-    map_yaml_file = os.path.join(pkg_share, 'maps', 'my_map.yaml')
+    nav2_params = RewrittenYaml(
+        source_file=params_file,
+        root_key='',
+        param_rewrites={
+            'global_costmap.global_costmap.static_layer.map_topic': static_map_topic,
+        },
+        convert_types=True,
+    )
     rviz_config_file = os.path.join(pkg_share, 'rviz', 'navigation.rviz')
     
     # Map server
@@ -54,9 +90,10 @@ def generate_launch_description():
         name='map_server',
         output='screen',
         parameters=[
-            {'yaml_filename': map_yaml_file},
+            {'yaml_filename': map_yaml},
             {'use_sim_time': use_sim_time}
-        ]
+        ],
+        condition=UnlessCondition(use_slam)
     )
     
     # AMCL
@@ -65,7 +102,8 @@ def generate_launch_description():
         executable='amcl',
         name='amcl',
         output='screen',
-        parameters=[params_file, {'use_sim_time': use_sim_time}]
+        parameters=[nav2_params, {'use_sim_time': use_sim_time}],
+        condition=UnlessCondition(use_slam)
     )
     
     # Controller server
@@ -74,7 +112,7 @@ def generate_launch_description():
         executable='controller_server',
         name='controller_server',
         output='screen',
-        parameters=[params_file, {'use_sim_time': use_sim_time}],
+        parameters=[nav2_params, {'use_sim_time': use_sim_time}],
         remappings=[('cmd_vel', 'cmd_vel_nav')]
     )
     
@@ -84,7 +122,7 @@ def generate_launch_description():
         executable='planner_server',
         name='planner_server',
         output='screen',
-        parameters=[params_file, {'use_sim_time': use_sim_time}]
+        parameters=[nav2_params, {'use_sim_time': use_sim_time}]
     )
     
     # Behavior server
@@ -93,7 +131,7 @@ def generate_launch_description():
         executable='behavior_server',
         name='behavior_server',
         output='screen',
-        parameters=[params_file, {'use_sim_time': use_sim_time}]
+        parameters=[nav2_params, {'use_sim_time': use_sim_time}]
     )
     
     # BT Navigator
@@ -102,7 +140,7 @@ def generate_launch_description():
         executable='bt_navigator',
         name='bt_navigator',
         output='screen',
-        parameters=[params_file, {'use_sim_time': use_sim_time}]
+        parameters=[nav2_params, {'use_sim_time': use_sim_time}]
     )
     
     # Waypoint follower
@@ -111,7 +149,7 @@ def generate_launch_description():
         executable='waypoint_follower',
         name='waypoint_follower',
         output='screen',
-        parameters=[params_file, {'use_sim_time': use_sim_time}]
+        parameters=[nav2_params, {'use_sim_time': use_sim_time}]
     )
     
     # Velocity smoother
@@ -120,7 +158,7 @@ def generate_launch_description():
         executable='velocity_smoother',
         name='velocity_smoother',
         output='screen',
-        parameters=[params_file, {'use_sim_time': use_sim_time}],
+        parameters=[nav2_params, {'use_sim_time': use_sim_time}],
         remappings=[
             ('cmd_vel', 'cmd_vel_nav'),
             ('cmd_vel_smoothed', 'cmd_vel')
@@ -137,7 +175,8 @@ def generate_launch_description():
             {'use_sim_time': use_sim_time},
             {'autostart': autostart},
             {'node_names': ['map_server', 'amcl']}
-        ]
+        ],
+        condition=UnlessCondition(use_slam)
     )
     
     # Lifecycle manager for navigation

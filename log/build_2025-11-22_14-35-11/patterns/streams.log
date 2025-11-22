@@ -1,0 +1,27 @@
+[1.396s] Invoking command in '/home/adam-warn/GigaVacuumMobil/src/patterns': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/adam-warn/GigaVacuumMobil/build/patterns/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/patterns build --build-base /home/adam-warn/GigaVacuumMobil/build/patterns/build install --record /home/adam-warn/GigaVacuumMobil/build/patterns/install.log --single-version-externally-managed install_data
+[1.691s] running egg_info
+[1.717s] writing ../../build/patterns/patterns.egg-info/PKG-INFO
+[1.717s] writing dependency_links to ../../build/patterns/patterns.egg-info/dependency_links.txt
+[1.718s] writing entry points to ../../build/patterns/patterns.egg-info/entry_points.txt
+[1.718s] writing requirements to ../../build/patterns/patterns.egg-info/requires.txt
+[1.718s] writing top-level names to ../../build/patterns/patterns.egg-info/top_level.txt
+[1.767s] reading manifest file '../../build/patterns/patterns.egg-info/SOURCES.txt'
+[1.767s] writing manifest file '../../build/patterns/patterns.egg-info/SOURCES.txt'
+[1.768s] running build
+[1.768s] running build_py
+[1.768s] copying patterns/behavior_tree/manager_node.py -> /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/behavior_tree
+[1.768s] copying patterns/patterns/systematic_cleaning/nodes/coverage_trigger.py -> /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/patterns/systematic_cleaning/nodes
+[1.769s] running install
+[1.775s] running install_lib
+[1.802s] copying /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/patterns/systematic_cleaning/nodes/coverage_trigger.py -> /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/patterns/systematic_cleaning/nodes
+[1.803s] copying /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/behavior_tree/manager_node.py -> /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/behavior_tree
+[1.804s] byte-compiling /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/patterns/systematic_cleaning/nodes/coverage_trigger.py to coverage_trigger.cpython-312.pyc
+[1.805s] byte-compiling /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/behavior_tree/manager_node.py to manager_node.cpython-312.pyc
+[1.807s] running install_data
+[1.807s] running install_egg_info
+[1.834s] removing '/home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns-0.1.0-py3.12.egg-info' (and everything under it)
+[1.834s] Copying ../../build/patterns/patterns.egg-info to /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns-0.1.0-py3.12.egg-info
+[1.835s] running install_scripts
+[2.012s] Installing pattern_manager script to /home/adam-warn/GigaVacuumMobil/install/patterns/lib/patterns
+[2.013s] writing list of installed files to '/home/adam-warn/GigaVacuumMobil/build/patterns/install.log'
+[2.074s] Invoked command in '/home/adam-warn/GigaVacuumMobil/src/patterns' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/adam-warn/GigaVacuumMobil/build/patterns/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/patterns build --build-base /home/adam-warn/GigaVacuumMobil/build/patterns/build install --record /home/adam-warn/GigaVacuumMobil/build/patterns/install.log --single-version-externally-managed install_data

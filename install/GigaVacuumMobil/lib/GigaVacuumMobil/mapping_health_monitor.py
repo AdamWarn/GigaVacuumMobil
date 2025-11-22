@@ -1,0 +1,1 @@
+/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil/scripts/mapping_health_monitor.py

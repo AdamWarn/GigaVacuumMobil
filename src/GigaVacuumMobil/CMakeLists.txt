@@ -61,6 +61,9 @@ install(
   PROGRAMS
     scripts/cmd_vel_relay.py
     scripts/odom_frame_fixer.py
+    scripts/scan_timestamp_sync.py
+    scripts/odom_to_pose.py
+    scripts/mapping_health_monitor.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

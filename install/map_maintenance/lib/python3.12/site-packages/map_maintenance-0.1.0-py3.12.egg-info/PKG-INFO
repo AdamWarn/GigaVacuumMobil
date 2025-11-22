@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: map-maintenance
+Version: 0.1.0
+Summary: Tools for capturing updated occupancy maps and saving them to disk.
+Maintainer: adam-warn
+Maintainer-email: adam.o.warn@gmail.com
+License: Apache-2.0

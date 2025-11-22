@@ -1,0 +1,2 @@
+[console_scripts]
+map_updater_node = map_maintenance.map_updater_node:main

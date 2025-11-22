@@ -37,7 +37,7 @@ def generate_launch_description():
             description='Start RViz for visualization (disable if using navigation launch)',
         )
     )
-    
+
     declared_arguments.append(
         DeclareLaunchArgument(
             'world',
@@ -45,7 +45,7 @@ def generate_launch_description():
             description='Name of the Gazebo world file (without .sdf extension)',
         )
     )
-    
+
     declared_arguments.append(
         DeclareLaunchArgument(
             'use_sim_time',
@@ -65,6 +65,22 @@ def generate_launch_description():
         value=os.path.join(pkg_share, 'worlds')
     )
 
+    # Ensure Gazebo can find ROS system plugins and throttle /clock to avoid TF resets
+    ros_distro = os.environ.get('ROS_DISTRO', 'jazzy')
+    ros_lib_path = os.path.join('/opt/ros', ros_distro, 'lib')
+    existing_plugin_path = os.environ.get('IGN_GAZEBO_SYSTEM_PLUGIN_PATH', '')
+    merged_plugin_path = (
+        f"{existing_plugin_path}{os.pathsep}{ros_lib_path}"
+        if existing_plugin_path else ros_lib_path
+    )
+    set_plugin_path = SetEnvironmentVariable(
+        name='IGN_GAZEBO_SYSTEM_PLUGIN_PATH',
+        value=merged_plugin_path,
+    )
+    set_clock_frequency = SetEnvironmentVariable(
+        name='ROS_GZ_SIM_CLOCK_TOPIC_FREQ',
+        value='100',
+    )
     # World file path
     world_file = PathJoinSubstitution([
         FindPackageShare('GigaVacuumMobil'),
@@ -100,12 +116,12 @@ def generate_launch_description():
             os.path.join(pkg_ros_gz_sim, 'launch', 'gz_sim.launch.py')
         ),
         launch_arguments={
-            'gz_args': [world_file, ' -r'],  # -r flag starts paused, allowing plugins to load
+            'gz_args': [world_file, ' -r'],  # start paused; clock throttled via env var
             'on_exit_shutdown': 'true',
         }.items(),
     )
 
-    # Spawn the robot in Gazebo
+    # Spawn the robot in Gazebo (delay to give gz_sim time to finish loading)
     spawn_robot = Node(
         package='ros_gz_sim',
         executable='create',
@@ -151,16 +167,6 @@ def generate_launch_description():
         output='screen',
     )
 
-    # Alternative: Manual bridge for critical topics
-    clock_bridge = Node(
-        package='ros_gz_bridge',
-        executable='parameter_bridge',
-        arguments=[
-            '/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock',
-        ],
-        output='screen',
-    )
-
     # Note: Controller manager is already started by gz_ros2_control plugin in Gazebo
     # No need to start a separate ros2_control_node for simulation
 
@@ -191,22 +197,31 @@ def generate_launch_description():
         parameters=[{'use_sim_time': use_sim_time}],
     )
 
-    # Joint State Broadcaster Spawner
+    # Controller spawners (ros2_control lifecycle)
     joint_state_broadcaster_spawner = Node(
         package='controller_manager',
         executable='spawner',
-        arguments=['joint_state_broadcaster', '--controller-manager', '/controller_manager', 
-                   '--controller-manager-timeout', '30'],
+        arguments=[
+            'joint_state_broadcaster',
+            '--controller-manager', '/controller_manager',
+            '--controller-manager-timeout', '30',
+            '-u',
+        ],
         parameters=[{'use_sim_time': use_sim_time}],
+        output='screen',
     )
 
-    # Diff Drive Controller Spawner
     diff_drive_controller_spawner = Node(
         package='controller_manager',
         executable='spawner',
-        arguments=['diff_drive_controller', '--controller-manager', '/controller_manager',
-                   '--controller-manager-timeout', '30'],
+        arguments=[
+            'diff_drive_controller',
+            '--controller-manager', '/controller_manager',
+            '--controller-manager-timeout', '30',
+            '-u',
+        ],
         parameters=[{'use_sim_time': use_sim_time}],
+        output='screen',
     )
 
     # RViz Node
@@ -224,46 +239,37 @@ def generate_launch_description():
         condition=IfCondition(use_rviz),
     )
 
-    # Delay controller spawners after robot spawn with extra time for Gazebo to initialize
-    delay_joint_state_broadcaster_after_spawn = RegisterEventHandler(
-        event_handler=OnProcessExit(
-            target_action=spawn_robot,
-            on_exit=[
-                TimerAction(
-                    period=3.0,  # Wait 3 seconds after spawn for Gazebo to settle
-                    actions=[joint_state_broadcaster_spawner],
-                )
-            ],
-        )
+    spawn_timer = TimerAction(
+        period=5.0,
+        actions=[spawn_robot],
     )
 
-    delay_diff_drive_controller_after_joint_state = RegisterEventHandler(
-        event_handler=OnProcessExit(
-            target_action=joint_state_broadcaster_spawner,
-            on_exit=[
-                TimerAction(
-                    period=2.0,  # Wait 2 seconds between controllers
-                    actions=[diff_drive_controller_spawner],
-                )
-            ],
-        )
+    joint_state_timer = TimerAction(
+        period=5.0,
+        actions=[joint_state_broadcaster_spawner],
+    )
+
+    diff_drive_timer = TimerAction(
+        period=8.0,
+        actions=[diff_drive_controller_spawner],
     )
 
     # Create the launch description
     nodes = [
         set_gazebo_resource_path,
+        set_plugin_path,
+        set_clock_frequency,
         *declared_arguments,
         gazebo,
         robot_state_pub_node,
-        spawn_robot,
-        clock_bridge,
+        spawn_timer,
         cmd_vel_relay,
         odom_frame_fixer,
         static_tf_lidar,
-        # gz_bridge,  # Uncomment if you want to use the YAML-based bridge
+        joint_state_timer,
+        diff_drive_timer,
+        gz_bridge,  # Uncomment if you want to use the YAML-based bridge
         # Note: control_node removed - Gazebo's gz_ros2_control handles controllers
-        delay_joint_state_broadcaster_after_spawn,
-        delay_diff_drive_controller_after_joint_state,
         rviz_node,
     ]
 

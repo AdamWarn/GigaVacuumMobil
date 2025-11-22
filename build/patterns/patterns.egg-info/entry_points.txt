@@ -1,0 +1,2 @@
+[console_scripts]
+pattern_manager = patterns.behavior_tree.manager_node:main

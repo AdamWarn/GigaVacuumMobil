@@ -1,0 +1,249 @@
+[0.125s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.125s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x71347d37dbe0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x71347d37d370>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x71347d37d370>>, mixin_verb=('build',))
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.171s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/adam-warn/GigaVacuumMobil'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/GigaVacuumMobil) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/GigaVacuumMobil) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/GigaVacuumMobil) by extension 'ignore_ament_install'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/GigaVacuumMobil) by extensions ['colcon_pkg']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/GigaVacuumMobil) by extension 'colcon_pkg'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/GigaVacuumMobil) by extensions ['colcon_meta']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/GigaVacuumMobil) by extension 'colcon_meta'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/GigaVacuumMobil) by extensions ['ros']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/GigaVacuumMobil) by extension 'ros'
+[0.204s] DEBUG:colcon.colcon_core.package_identification:Package 'src/GigaVacuumMobil' with type 'ros.ament_cmake' and name 'GigaVacuumMobil'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/cleaning_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/cleaning_planner) by extension 'ignore'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/cleaning_planner) by extension 'ignore_ament_install'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/cleaning_planner) by extensions ['colcon_pkg']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/cleaning_planner) by extension 'colcon_pkg'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/cleaning_planner) by extensions ['colcon_meta']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/cleaning_planner) by extension 'colcon_meta'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/cleaning_planner) by extensions ['ros']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/cleaning_planner) by extension 'ros'
+[0.205s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cleaning_planner' with type 'ros.ament_python' and name 'cleaning_planner'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/map_maintenance) by extensions ['ignore', 'ignore_ament_install']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/map_maintenance) by extension 'ignore'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/map_maintenance) by extension 'ignore_ament_install'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/map_maintenance) by extensions ['colcon_pkg']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/map_maintenance) by extension 'colcon_pkg'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/map_maintenance) by extensions ['colcon_meta']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/map_maintenance) by extension 'colcon_meta'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/map_maintenance) by extensions ['ros']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/map_maintenance) by extension 'ros'
+[0.207s] DEBUG:colcon.colcon_core.package_identification:Package 'src/map_maintenance' with type 'ros.ament_python' and name 'map_maintenance'
+[0.207s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.207s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.207s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.207s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.207s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.228s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.228s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.230s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/adam-warn/GigaVacuumMobil/install
+[0.233s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 422 installed packages in /opt/ros/jazzy
+[0.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'GigaVacuumMobil' build argument 'cmake_args' from command line to 'None'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'GigaVacuumMobil' build argument 'cmake_target' from command line to 'None'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'GigaVacuumMobil' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'GigaVacuumMobil' build argument 'cmake_clean_cache' from command line to 'False'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'GigaVacuumMobil' build argument 'cmake_clean_first' from command line to 'False'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'GigaVacuumMobil' build argument 'cmake_force_configure' from command line to 'False'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'GigaVacuumMobil' build argument 'ament_cmake_args' from command line to 'None'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'GigaVacuumMobil' build argument 'catkin_cmake_args' from command line to 'None'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'GigaVacuumMobil' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.296s] DEBUG:colcon.colcon_core.verb:Building package 'GigaVacuumMobil' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil', 'merge_install': False, 'path': '/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil', 'symlink_install': False, 'test_result_base': None}
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'cleaning_planner' build argument 'cmake_args' from command line to 'None'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'cleaning_planner' build argument 'cmake_target' from command line to 'None'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'cleaning_planner' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'cleaning_planner' build argument 'cmake_clean_cache' from command line to 'False'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'cleaning_planner' build argument 'cmake_clean_first' from command line to 'False'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'cleaning_planner' build argument 'cmake_force_configure' from command line to 'False'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'cleaning_planner' build argument 'ament_cmake_args' from command line to 'None'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'cleaning_planner' build argument 'catkin_cmake_args' from command line to 'None'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'cleaning_planner' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.297s] DEBUG:colcon.colcon_core.verb:Building package 'cleaning_planner' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/adam-warn/GigaVacuumMobil/build/cleaning_planner', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/adam-warn/GigaVacuumMobil/install/cleaning_planner', 'merge_install': False, 'path': '/home/adam-warn/GigaVacuumMobil/src/cleaning_planner', 'symlink_install': False, 'test_result_base': None}
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'map_maintenance' build argument 'cmake_args' from command line to 'None'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'map_maintenance' build argument 'cmake_target' from command line to 'None'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'map_maintenance' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'map_maintenance' build argument 'cmake_clean_cache' from command line to 'False'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'map_maintenance' build argument 'cmake_clean_first' from command line to 'False'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'map_maintenance' build argument 'cmake_force_configure' from command line to 'False'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'map_maintenance' build argument 'ament_cmake_args' from command line to 'None'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'map_maintenance' build argument 'catkin_cmake_args' from command line to 'None'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'map_maintenance' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.297s] DEBUG:colcon.colcon_core.verb:Building package 'map_maintenance' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/adam-warn/GigaVacuumMobil/build/map_maintenance', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/adam-warn/GigaVacuumMobil/install/map_maintenance', 'merge_install': False, 'path': '/home/adam-warn/GigaVacuumMobil/src/map_maintenance', 'symlink_install': False, 'test_result_base': None}
+[0.297s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.298s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.298s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil' with build type 'ament_cmake'
+[0.298s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil'
+[0.300s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.300s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.300s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.305s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/adam-warn/GigaVacuumMobil/src/cleaning_planner' with build type 'ament_python'
+[0.306s] Level 1:colcon.colcon_core.shell:create_environment_hook('cleaning_planner', 'ament_prefix_path')
+[0.306s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adam-warn/GigaVacuumMobil/install/cleaning_planner/share/cleaning_planner/hook/ament_prefix_path.ps1'
+[0.307s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adam-warn/GigaVacuumMobil/install/cleaning_planner/share/cleaning_planner/hook/ament_prefix_path.dsv'
+[0.307s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adam-warn/GigaVacuumMobil/install/cleaning_planner/share/cleaning_planner/hook/ament_prefix_path.sh'
+[0.308s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.308s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.314s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/adam-warn/GigaVacuumMobil/src/map_maintenance' with build type 'ament_python'
+[0.314s] Level 1:colcon.colcon_core.shell:create_environment_hook('map_maintenance', 'ament_prefix_path')
+[0.314s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adam-warn/GigaVacuumMobil/install/map_maintenance/share/map_maintenance/hook/ament_prefix_path.ps1'
+[0.315s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adam-warn/GigaVacuumMobil/install/map_maintenance/share/map_maintenance/hook/ament_prefix_path.dsv'
+[0.316s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adam-warn/GigaVacuumMobil/install/map_maintenance/share/map_maintenance/hook/ament_prefix_path.sh'
+[0.316s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.316s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.328s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adam-warn/GigaVacuumMobil/install/cleaning_planner:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil -- -j12 -l12
+[0.597s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/adam-warn/GigaVacuumMobil/src/cleaning_planner'
+[0.597s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.597s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.604s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adam-warn/GigaVacuumMobil/install/cleaning_planner:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil -- -j12 -l12
+[0.620s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adam-warn/GigaVacuumMobil/install/cleaning_planner:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil
+[0.872s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/adam-warn/GigaVacuumMobil/src/map_maintenance'
+[0.873s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.873s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.887s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(GigaVacuumMobil)
+[0.888s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adam-warn/GigaVacuumMobil/install/cleaning_planner:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/adam-warn/GigaVacuumMobil/build/GigaVacuumMobil
+[0.889s] Level 1:colcon.colcon_core.environment:checking '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil' for CMake module files
+[0.890s] Level 1:colcon.colcon_core.environment:checking '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil' for CMake config files
+[0.891s] Level 1:colcon.colcon_core.shell:create_environment_hook('GigaVacuumMobil', 'cmake_prefix_path')
+[0.891s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/hook/cmake_prefix_path.ps1'
+[0.892s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/hook/cmake_prefix_path.dsv'
+[0.892s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/hook/cmake_prefix_path.sh'
+[0.893s] Level 1:colcon.colcon_core.environment:checking '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/lib'
+[0.893s] Level 1:colcon.colcon_core.shell:create_environment_hook('GigaVacuumMobil', 'ld_library_path_lib')
+[0.893s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/hook/ld_library_path_lib.ps1'
+[0.894s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/hook/ld_library_path_lib.dsv'
+[0.894s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/hook/ld_library_path_lib.sh'
+[0.894s] Level 1:colcon.colcon_core.environment:checking '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/bin'
+[0.894s] Level 1:colcon.colcon_core.environment:checking '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/lib/pkgconfig/GigaVacuumMobil.pc'
+[0.895s] Level 1:colcon.colcon_core.environment:checking '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/lib/python3.12/site-packages'
+[0.895s] Level 1:colcon.colcon_core.environment:checking '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/bin'
+[0.895s] INFO:colcon.colcon_core.shell:Creating package script '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/package.ps1'
+[0.896s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/package.dsv'
+[0.897s] INFO:colcon.colcon_core.shell:Creating package script '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/package.sh'
+[0.897s] INFO:colcon.colcon_core.shell:Creating package script '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/package.bash'
+[0.898s] INFO:colcon.colcon_core.shell:Creating package script '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/package.zsh'
+[0.898s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/colcon-core/packages/GigaVacuumMobil)
+[0.899s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(GigaVacuumMobil)
+[0.899s] Level 1:colcon.colcon_core.environment:checking '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil' for CMake module files
+[0.900s] Level 1:colcon.colcon_core.environment:checking '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil' for CMake config files
+[0.901s] Level 1:colcon.colcon_core.shell:create_environment_hook('GigaVacuumMobil', 'cmake_prefix_path')
+[0.901s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/hook/cmake_prefix_path.ps1'
+[0.902s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/hook/cmake_prefix_path.dsv'
+[0.902s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/hook/cmake_prefix_path.sh'
+[0.903s] Level 1:colcon.colcon_core.environment:checking '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/lib'
+[0.903s] Level 1:colcon.colcon_core.shell:create_environment_hook('GigaVacuumMobil', 'ld_library_path_lib')
+[0.903s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/hook/ld_library_path_lib.ps1'
+[0.904s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/hook/ld_library_path_lib.dsv'
+[0.905s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/hook/ld_library_path_lib.sh'
+[0.905s] Level 1:colcon.colcon_core.environment:checking '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/bin'
+[0.905s] Level 1:colcon.colcon_core.environment:checking '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/lib/pkgconfig/GigaVacuumMobil.pc'
+[0.905s] Level 1:colcon.colcon_core.environment:checking '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/lib/python3.12/site-packages'
+[0.906s] Level 1:colcon.colcon_core.environment:checking '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/bin'
+[0.906s] INFO:colcon.colcon_core.shell:Creating package script '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/package.ps1'
+[0.907s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/package.dsv'
+[0.907s] INFO:colcon.colcon_core.shell:Creating package script '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/package.sh'
+[0.908s] INFO:colcon.colcon_core.shell:Creating package script '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/package.bash'
+[0.908s] INFO:colcon.colcon_core.shell:Creating package script '/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/GigaVacuumMobil/package.zsh'
+[0.908s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/adam-warn/GigaVacuumMobil/install/GigaVacuumMobil/share/colcon-core/packages/GigaVacuumMobil)
+[1.652s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adam-warn/GigaVacuumMobil/src/cleaning_planner': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/adam-warn/GigaVacuumMobil/build/cleaning_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adam-warn/GigaVacuumMobil/install/cleaning_planner/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cleaning_planner build --build-base /home/adam-warn/GigaVacuumMobil/build/cleaning_planner/build install --record /home/adam-warn/GigaVacuumMobil/build/cleaning_planner/install.log --single-version-externally-managed install_data
+[1.702s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adam-warn/GigaVacuumMobil/src/map_maintenance': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/adam-warn/GigaVacuumMobil/build/map_maintenance/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adam-warn/GigaVacuumMobil/install/map_maintenance/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/map_maintenance build --build-base /home/adam-warn/GigaVacuumMobil/build/map_maintenance/build install --record /home/adam-warn/GigaVacuumMobil/build/map_maintenance/install.log --single-version-externally-managed install_data
+[2.390s] Level 1:colcon.colcon_core.environment:checking '/home/adam-warn/GigaVacuumMobil/install/cleaning_planner' for CMake module files
+[2.390s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adam-warn/GigaVacuumMobil/src/cleaning_planner' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/adam-warn/GigaVacuumMobil/build/cleaning_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adam-warn/GigaVacuumMobil/install/cleaning_planner/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cleaning_planner build --build-base /home/adam-warn/GigaVacuumMobil/build/cleaning_planner/build install --record /home/adam-warn/GigaVacuumMobil/build/cleaning_planner/install.log --single-version-externally-managed install_data
+[2.391s] Level 1:colcon.colcon_core.environment:checking '/home/adam-warn/GigaVacuumMobil/install/cleaning_planner' for CMake config files
+[2.392s] Level 1:colcon.colcon_core.environment:checking '/home/adam-warn/GigaVacuumMobil/install/cleaning_planner/lib'
+[2.392s] Level 1:colcon.colcon_core.environment:checking '/home/adam-warn/GigaVacuumMobil/install/cleaning_planner/bin'
+[2.392s] Level 1:colcon.colcon_core.environment:checking '/home/adam-warn/GigaVacuumMobil/install/cleaning_planner/lib/pkgconfig/cleaning_planner.pc'
+[2.392s] Level 1:colcon.colcon_core.environment:checking '/home/adam-warn/GigaVacuumMobil/install/cleaning_planner/lib/python3.12/site-packages'
+[2.392s] Level 1:colcon.colcon_core.shell:create_environment_hook('cleaning_planner', 'pythonpath')
+[2.393s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adam-warn/GigaVacuumMobil/install/cleaning_planner/share/cleaning_planner/hook/pythonpath.ps1'
+[2.393s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adam-warn/GigaVacuumMobil/install/cleaning_planner/share/cleaning_planner/hook/pythonpath.dsv'
+[2.394s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adam-warn/GigaVacuumMobil/install/cleaning_planner/share/cleaning_planner/hook/pythonpath.sh'
+[2.394s] Level 1:colcon.colcon_core.environment:checking '/home/adam-warn/GigaVacuumMobil/install/cleaning_planner/bin'
+[2.394s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cleaning_planner)
+[2.395s] INFO:colcon.colcon_core.shell:Creating package script '/home/adam-warn/GigaVacuumMobil/install/cleaning_planner/share/cleaning_planner/package.ps1'
+[2.395s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/adam-warn/GigaVacuumMobil/install/cleaning_planner/share/cleaning_planner/package.dsv'
+[2.395s] INFO:colcon.colcon_core.shell:Creating package script '/home/adam-warn/GigaVacuumMobil/install/cleaning_planner/share/cleaning_planner/package.sh'
+[2.396s] INFO:colcon.colcon_core.shell:Creating package script '/home/adam-warn/GigaVacuumMobil/install/cleaning_planner/share/cleaning_planner/package.bash'
+[2.396s] INFO:colcon.colcon_core.shell:Creating package script '/home/adam-warn/GigaVacuumMobil/install/cleaning_planner/share/cleaning_planner/package.zsh'
+[2.396s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/adam-warn/GigaVacuumMobil/install/cleaning_planner/share/colcon-core/packages/cleaning_planner)
+[2.446s] Level 1:colcon.colcon_core.environment:checking '/home/adam-warn/GigaVacuumMobil/install/map_maintenance' for CMake module files
+[2.446s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adam-warn/GigaVacuumMobil/src/map_maintenance' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/adam-warn/GigaVacuumMobil/build/map_maintenance/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adam-warn/GigaVacuumMobil/install/map_maintenance/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/map_maintenance build --build-base /home/adam-warn/GigaVacuumMobil/build/map_maintenance/build install --record /home/adam-warn/GigaVacuumMobil/build/map_maintenance/install.log --single-version-externally-managed install_data
+[2.447s] Level 1:colcon.colcon_core.environment:checking '/home/adam-warn/GigaVacuumMobil/install/map_maintenance' for CMake config files
+[2.447s] Level 1:colcon.colcon_core.environment:checking '/home/adam-warn/GigaVacuumMobil/install/map_maintenance/lib'
+[2.447s] Level 1:colcon.colcon_core.environment:checking '/home/adam-warn/GigaVacuumMobil/install/map_maintenance/bin'
+[2.447s] Level 1:colcon.colcon_core.environment:checking '/home/adam-warn/GigaVacuumMobil/install/map_maintenance/lib/pkgconfig/map_maintenance.pc'
+[2.448s] Level 1:colcon.colcon_core.environment:checking '/home/adam-warn/GigaVacuumMobil/install/map_maintenance/lib/python3.12/site-packages'
+[2.448s] Level 1:colcon.colcon_core.shell:create_environment_hook('map_maintenance', 'pythonpath')
+[2.448s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adam-warn/GigaVacuumMobil/install/map_maintenance/share/map_maintenance/hook/pythonpath.ps1'
+[2.448s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adam-warn/GigaVacuumMobil/install/map_maintenance/share/map_maintenance/hook/pythonpath.dsv'
+[2.449s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adam-warn/GigaVacuumMobil/install/map_maintenance/share/map_maintenance/hook/pythonpath.sh'
+[2.449s] Level 1:colcon.colcon_core.environment:checking '/home/adam-warn/GigaVacuumMobil/install/map_maintenance/bin'
+[2.449s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(map_maintenance)
+[2.450s] INFO:colcon.colcon_core.shell:Creating package script '/home/adam-warn/GigaVacuumMobil/install/map_maintenance/share/map_maintenance/package.ps1'
+[2.450s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/adam-warn/GigaVacuumMobil/install/map_maintenance/share/map_maintenance/package.dsv'
+[2.450s] INFO:colcon.colcon_core.shell:Creating package script '/home/adam-warn/GigaVacuumMobil/install/map_maintenance/share/map_maintenance/package.sh'
+[2.451s] INFO:colcon.colcon_core.shell:Creating package script '/home/adam-warn/GigaVacuumMobil/install/map_maintenance/share/map_maintenance/package.bash'
+[2.451s] INFO:colcon.colcon_core.shell:Creating package script '/home/adam-warn/GigaVacuumMobil/install/map_maintenance/share/map_maintenance/package.zsh'
+[2.451s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/adam-warn/GigaVacuumMobil/install/map_maintenance/share/colcon-core/packages/map_maintenance)
+[2.452s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.452s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.452s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.452s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.476s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.476s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.476s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.497s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.497s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/adam-warn/GigaVacuumMobil/install/local_setup.ps1'
+[2.498s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/adam-warn/GigaVacuumMobil/install/_local_setup_util_ps1.py'
+[2.500s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/adam-warn/GigaVacuumMobil/install/setup.ps1'
+[2.501s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/adam-warn/GigaVacuumMobil/install/local_setup.sh'
+[2.502s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/adam-warn/GigaVacuumMobil/install/_local_setup_util_sh.py'
+[2.502s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/adam-warn/GigaVacuumMobil/install/setup.sh'
+[2.503s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/adam-warn/GigaVacuumMobil/install/local_setup.bash'
+[2.504s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/adam-warn/GigaVacuumMobil/install/setup.bash'
+[2.505s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/adam-warn/GigaVacuumMobil/install/local_setup.zsh'
+[2.505s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/adam-warn/GigaVacuumMobil/install/setup.zsh'

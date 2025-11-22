@@ -9,7 +9,11 @@ setup.py
 ../../build/cleaning_planner/cleaning_planner.egg-info/top_level.txt
 ../../build/cleaning_planner/cleaning_planner.egg-info/zip-safe
 cleaning_planner/__init__.py
+cleaning_planner/coverage_executor_node.py
+cleaning_planner/coverage_planner_core.py
+cleaning_planner/coverage_planner_node.py
 cleaning_planner/waypoint_generator.py
+launch/coverage_pipeline.launch.py
 launch/generate_waypoints.launch.py
 resource/cleaning_planner
 test/test_copyright.py

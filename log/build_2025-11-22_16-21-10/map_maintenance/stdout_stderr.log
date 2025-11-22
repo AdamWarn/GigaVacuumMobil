@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing map_maintenance.egg-info/PKG-INFO
+writing dependency_links to map_maintenance.egg-info/dependency_links.txt
+writing entry points to map_maintenance.egg-info/entry_points.txt
+writing requirements to map_maintenance.egg-info/requires.txt
+writing top-level names to map_maintenance.egg-info/top_level.txt
+reading manifest file 'map_maintenance.egg-info/SOURCES.txt'
+writing manifest file 'map_maintenance.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/adam-warn/GigaVacuumMobil/install/map_maintenance/lib/python3.12/site-packages/map-maintenance.egg-link (link to .)
+Installing map_updater_node script to /home/adam-warn/GigaVacuumMobil/install/map_maintenance/lib/map_maintenance
+
+Installed /home/adam-warn/GigaVacuumMobil/build/map_maintenance
+running symlink_data
+symbolically linking /home/adam-warn/GigaVacuumMobil/build/map_maintenance/resource/map_maintenance -> /home/adam-warn/GigaVacuumMobil/install/map_maintenance/share/ament_index/resource_index/packages
+symbolically linking /home/adam-warn/GigaVacuumMobil/build/map_maintenance/package.xml -> /home/adam-warn/GigaVacuumMobil/install/map_maintenance/share/map_maintenance

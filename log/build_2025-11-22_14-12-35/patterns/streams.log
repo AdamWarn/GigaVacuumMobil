@@ -1,0 +1,88 @@
+[1.557s] Invoking command in '/home/adam-warn/GigaVacuumMobil/src/patterns': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/adam-warn/GigaVacuumMobil/build/patterns/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/patterns build --build-base /home/adam-warn/GigaVacuumMobil/build/patterns/build install --record /home/adam-warn/GigaVacuumMobil/build/patterns/install.log --install-scripts $base/lib/patterns --single-version-externally-managed install_data
+[1.691s] /usr/lib/python3/dist-packages/setuptools/dist.py:744: SetuptoolsDeprecationWarning: Invalid dash-separated options
+[1.691s] !!
+[1.691s] 
+[1.691s]         ********************************************************************************
+[1.691s]         Usage of dash-separated 'script-dir' will not be supported in future
+[1.691s]         versions. Please use the underscore name 'script_dir' instead.
+[1.691s] 
+[1.691s]         This deprecation is overdue, please update your project and remove deprecated
+[1.691s]         calls to avoid build errors in the future.
+[1.692s] 
+[1.692s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[1.692s]         ********************************************************************************
+[1.692s] 
+[1.692s] !!
+[1.692s]   opt = self.warn_dash_deprecation(opt, section)
+[1.862s] running egg_info
+[1.862s] creating ../../build/patterns/patterns.egg-info
+[1.888s] writing ../../build/patterns/patterns.egg-info/PKG-INFO
+[1.888s] writing dependency_links to ../../build/patterns/patterns.egg-info/dependency_links.txt
+[1.889s] writing entry points to ../../build/patterns/patterns.egg-info/entry_points.txt
+[1.889s] writing requirements to ../../build/patterns/patterns.egg-info/requires.txt
+[1.889s] writing top-level names to ../../build/patterns/patterns.egg-info/top_level.txt
+[1.889s] writing manifest file '../../build/patterns/patterns.egg-info/SOURCES.txt'
+[1.938s] reading manifest file '../../build/patterns/patterns.egg-info/SOURCES.txt'
+[1.938s] writing manifest file '../../build/patterns/patterns.egg-info/SOURCES.txt'
+[1.939s] running build
+[1.939s] running build_py
+[1.939s] creating /home/adam-warn/GigaVacuumMobil/build/patterns/build
+[1.939s] creating /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib
+[1.939s] creating /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns
+[1.939s] copying patterns/__init__.py -> /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns
+[1.940s] creating /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/behavior_tree
+[1.940s] copying patterns/behavior_tree/__init__.py -> /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/behavior_tree
+[1.940s] copying patterns/behavior_tree/manager_node.py -> /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/behavior_tree
+[1.940s] creating /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/patterns
+[1.940s] copying patterns/patterns/__init__.py -> /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/patterns
+[1.940s] creating /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/patterns/exploration
+[1.940s] copying patterns/patterns/exploration/__init__.py -> /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/patterns/exploration
+[1.940s] creating /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/patterns/exploration/nodes
+[1.941s] copying patterns/patterns/exploration/nodes/frontier_supervisor.py -> /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/patterns/exploration/nodes
+[1.941s] copying patterns/patterns/exploration/nodes/__init__.py -> /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/patterns/exploration/nodes
+[1.941s] creating /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/patterns/systematic_cleaning
+[1.941s] copying patterns/patterns/systematic_cleaning/__init__.py -> /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/patterns/systematic_cleaning
+[1.941s] creating /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/patterns/systematic_cleaning/nodes
+[1.941s] copying patterns/patterns/systematic_cleaning/nodes/coverage_trigger.py -> /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/patterns/systematic_cleaning/nodes
+[1.941s] copying patterns/patterns/systematic_cleaning/nodes/__init__.py -> /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/patterns/systematic_cleaning/nodes
+[1.942s] running install
+[1.948s] running install_lib
+[1.974s] creating /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns
+[1.974s] creating /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/patterns
+[1.974s] creating /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/patterns/systematic_cleaning
+[1.974s] creating /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/patterns/systematic_cleaning/nodes
+[1.974s] copying /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/patterns/systematic_cleaning/nodes/coverage_trigger.py -> /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/patterns/systematic_cleaning/nodes
+[1.974s] copying /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/patterns/systematic_cleaning/nodes/__init__.py -> /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/patterns/systematic_cleaning/nodes
+[1.976s] copying /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/patterns/systematic_cleaning/__init__.py -> /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/patterns/systematic_cleaning
+[1.976s] creating /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/patterns/exploration
+[1.976s] creating /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/patterns/exploration/nodes
+[1.976s] copying /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/patterns/exploration/nodes/frontier_supervisor.py -> /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/patterns/exploration/nodes
+[1.976s] copying /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/patterns/exploration/nodes/__init__.py -> /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/patterns/exploration/nodes
+[1.976s] copying /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/patterns/exploration/__init__.py -> /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/patterns/exploration
+[1.976s] copying /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/patterns/__init__.py -> /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/patterns
+[1.976s] creating /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/behavior_tree
+[1.976s] copying /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/behavior_tree/__init__.py -> /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/behavior_tree
+[1.977s] copying /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/behavior_tree/manager_node.py -> /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/behavior_tree
+[1.977s] copying /home/adam-warn/GigaVacuumMobil/build/patterns/build/lib/patterns/__init__.py -> /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns
+[1.977s] byte-compiling /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/patterns/systematic_cleaning/nodes/coverage_trigger.py to coverage_trigger.cpython-312.pyc
+[1.978s] byte-compiling /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/patterns/systematic_cleaning/nodes/__init__.py to __init__.cpython-312.pyc
+[1.978s] byte-compiling /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/patterns/systematic_cleaning/__init__.py to __init__.cpython-312.pyc
+[1.978s] byte-compiling /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/patterns/exploration/nodes/frontier_supervisor.py to frontier_supervisor.cpython-312.pyc
+[1.981s] byte-compiling /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/patterns/exploration/nodes/__init__.py to __init__.cpython-312.pyc
+[1.981s] byte-compiling /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/patterns/exploration/__init__.py to __init__.cpython-312.pyc
+[1.981s] byte-compiling /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/patterns/__init__.py to __init__.cpython-312.pyc
+[1.982s] byte-compiling /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/behavior_tree/__init__.py to __init__.cpython-312.pyc
+[1.982s] byte-compiling /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/behavior_tree/manager_node.py to manager_node.cpython-312.pyc
+[1.983s] byte-compiling /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns/__init__.py to __init__.cpython-312.pyc
+[1.983s] running install_data
+[1.984s] creating /home/adam-warn/GigaVacuumMobil/install/patterns/share/ament_index
+[1.984s] creating /home/adam-warn/GigaVacuumMobil/install/patterns/share/ament_index/resource_index
+[1.984s] creating /home/adam-warn/GigaVacuumMobil/install/patterns/share/ament_index/resource_index/packages
+[1.984s] copying resource/patterns -> /home/adam-warn/GigaVacuumMobil/install/patterns/share/ament_index/resource_index/packages
+[1.984s] copying package.xml -> /home/adam-warn/GigaVacuumMobil/install/patterns/share/patterns
+[1.984s] running install_egg_info
+[2.012s] Copying ../../build/patterns/patterns.egg-info to /home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages/patterns-0.1.0-py3.12.egg-info
+[2.013s] running install_scripts
+[2.170s] Installing pattern_manager script to /home/adam-warn/GigaVacuumMobil/install/patterns/lib/patterns
+[2.171s] writing list of installed files to '/home/adam-warn/GigaVacuumMobil/build/patterns/install.log'
+[2.208s] Invoked command in '/home/adam-warn/GigaVacuumMobil/src/patterns' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/adam-warn/GigaVacuumMobil/build/patterns/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adam-warn/GigaVacuumMobil/install/patterns/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/patterns build --build-base /home/adam-warn/GigaVacuumMobil/build/patterns/build install --record /home/adam-warn/GigaVacuumMobil/build/patterns/install.log --install-scripts $base/lib/patterns --single-version-externally-managed install_data

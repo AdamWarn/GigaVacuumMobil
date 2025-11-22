@@ -46,10 +46,18 @@ def generate_launch_description():
             description='Map resolution in meters',
         )
     )
+    declared_arguments.append(
+        DeclareLaunchArgument(
+            'scan_topic',
+            default_value='/scan_synced',
+            description='LaserScan topic Cartographer should consume',
+        )
+    )
 
     # Initialize Arguments
     use_sim_time = LaunchConfiguration('use_sim_time')
     use_rviz = LaunchConfiguration('use_rviz')
+    scan_topic = LaunchConfiguration('scan_topic')
     
     # Configuration files
     cartographer_config_dir = PathJoinSubstitution([
@@ -71,7 +79,7 @@ def generate_launch_description():
             '-configuration_basename', cartographer_config_basename,
         ],
         remappings=[
-            ('scan', '/scan'),
+            ('scan', scan_topic),
             ('odom', '/odom'),  # Use fixed odometry with correct frame_ids
         ]
     )

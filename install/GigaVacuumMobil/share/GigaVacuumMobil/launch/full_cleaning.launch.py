@@ -1,0 +1,1 @@
+/home/adam-warn/GigaVacuumMobil/src/GigaVacuumMobil/launch/full_cleaning.launch.py

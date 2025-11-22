@@ -1,0 +1,32 @@
+[1.242s] Invoking command in '/home/adam-warn/GigaVacuumMobil/build/map_maintenance': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/adam-warn/GigaVacuumMobil/build/map_maintenance/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adam-warn/GigaVacuumMobil/install/map_maintenance/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/adam-warn/GigaVacuumMobil/build/map_maintenance/build
+[1.541s] running develop
+[1.760s] Removing /home/adam-warn/GigaVacuumMobil/install/map_maintenance/lib/python3.12/site-packages/map-maintenance.egg-link (link to .)
+[1.787s] Invoked command in '/home/adam-warn/GigaVacuumMobil/build/map_maintenance' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/adam-warn/GigaVacuumMobil/build/map_maintenance/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adam-warn/GigaVacuumMobil/install/map_maintenance/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/adam-warn/GigaVacuumMobil/build/map_maintenance/build
+[1.788s] Invoking command in '/home/adam-warn/GigaVacuumMobil/src/map_maintenance': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/adam-warn/GigaVacuumMobil/build/map_maintenance/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adam-warn/GigaVacuumMobil/install/map_maintenance/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/map_maintenance build --build-base /home/adam-warn/GigaVacuumMobil/build/map_maintenance/build install --record /home/adam-warn/GigaVacuumMobil/build/map_maintenance/install.log --single-version-externally-managed install_data --force
+[2.056s] running egg_info
+[2.075s] writing ../../build/map_maintenance/map_maintenance.egg-info/PKG-INFO
+[2.075s] writing dependency_links to ../../build/map_maintenance/map_maintenance.egg-info/dependency_links.txt
+[2.075s] writing entry points to ../../build/map_maintenance/map_maintenance.egg-info/entry_points.txt
+[2.075s] writing requirements to ../../build/map_maintenance/map_maintenance.egg-info/requires.txt
+[2.076s] writing top-level names to ../../build/map_maintenance/map_maintenance.egg-info/top_level.txt
+[2.119s] reading manifest file '../../build/map_maintenance/map_maintenance.egg-info/SOURCES.txt'
+[2.120s] writing manifest file '../../build/map_maintenance/map_maintenance.egg-info/SOURCES.txt'
+[2.120s] running build
+[2.120s] running build_py
+[2.120s] copying map_maintenance/map_updater_node.py -> /home/adam-warn/GigaVacuumMobil/build/map_maintenance/build/lib/map_maintenance
+[2.120s] running install
+[2.126s] running install_lib
+[2.148s] creating /home/adam-warn/GigaVacuumMobil/install/map_maintenance/lib/python3.12/site-packages/map_maintenance
+[2.149s] copying /home/adam-warn/GigaVacuumMobil/build/map_maintenance/build/lib/map_maintenance/__init__.py -> /home/adam-warn/GigaVacuumMobil/install/map_maintenance/lib/python3.12/site-packages/map_maintenance
+[2.149s] copying /home/adam-warn/GigaVacuumMobil/build/map_maintenance/build/lib/map_maintenance/map_updater_node.py -> /home/adam-warn/GigaVacuumMobil/install/map_maintenance/lib/python3.12/site-packages/map_maintenance
+[2.149s] byte-compiling /home/adam-warn/GigaVacuumMobil/install/map_maintenance/lib/python3.12/site-packages/map_maintenance/__init__.py to __init__.cpython-312.pyc
+[2.149s] byte-compiling /home/adam-warn/GigaVacuumMobil/install/map_maintenance/lib/python3.12/site-packages/map_maintenance/map_updater_node.py to map_updater_node.cpython-312.pyc
+[2.152s] running install_data
+[2.153s] copying resource/map_maintenance -> /home/adam-warn/GigaVacuumMobil/install/map_maintenance/share/ament_index/resource_index/packages
+[2.153s] copying package.xml -> /home/adam-warn/GigaVacuumMobil/install/map_maintenance/share/map_maintenance
+[2.154s] running install_egg_info
+[2.177s] Copying ../../build/map_maintenance/map_maintenance.egg-info to /home/adam-warn/GigaVacuumMobil/install/map_maintenance/lib/python3.12/site-packages/map_maintenance-0.1.0-py3.12.egg-info
+[2.178s] running install_scripts
+[2.321s] Installing map_updater_node script to /home/adam-warn/GigaVacuumMobil/install/map_maintenance/lib/map_maintenance
+[2.321s] writing list of installed files to '/home/adam-warn/GigaVacuumMobil/build/map_maintenance/install.log'
+[2.344s] Invoked command in '/home/adam-warn/GigaVacuumMobil/src/map_maintenance' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/adam-warn/GigaVacuumMobil/build/map_maintenance/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adam-warn/GigaVacuumMobil/install/map_maintenance/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/map_maintenance build --build-base /home/adam-warn/GigaVacuumMobil/build/map_maintenance/build install --record /home/adam-warn/GigaVacuumMobil/build/map_maintenance/install.log --single-version-externally-managed install_data --force

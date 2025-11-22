@@ -26,6 +26,65 @@ A ROS 2 Jazzy package for controlling a differential drive robot with `ros2_cont
 - **[SLAM_GUIDE.md](SLAM_GUIDE.md)** - Mapping with Cartographer
 - **[NAVIGATION_GUIDE.md](NAVIGATION_GUIDE.md)** - Autonomous navigation and systematic cleaning
 
+## Systematic Cleaning Pipeline
+
+The `cleaning_planner` package now ships a two-node pipeline that keeps the long, straight coverage rows you requested while letting Nav2 handle the low-level driving:
+
+- `coverage_planner_node`: loads an occupancy map, generates a boustrophedon path (optionally with boundary laps + safety margin) and republishes it as a latched `nav_msgs/Path`.
+- `coverage_executor_node`: subscribes to that plan, slices it into manageable batches, and feeds each batch to Nav2's `NavigateThroughPoses` action. Failed batches stop the run so you can intervene. The executor now stays idle until you explicitly enable it (service `/coverage_executor/start_coverage` or publishing `std_msgs/Bool` `true` to `/coverage_enable`), which lets you finish mapping safely first.
+- `patterns` package: keeps exploration/cleaning “patterns” organized under dedicated subdirectories and exposes a `pattern_manager` node that sequences them like a mini behavior tree.
+
+Quick start (after sourcing your workspace and launching Nav2):
+
+```bash
+ros2 launch cleaning_planner coverage_pipeline.launch.py \
+   map_file:=/path/to/my_map.yaml \
+   row_spacing:=0.45 \
+   safety_margin:=0.1
+```
+
+Key parameters exposed through the launch file:
+
+- `row_spacing`, `safety_margin`, `boundary_laps`, `orientation_mode`, `inflation_size` (planner geometry)
+- `poses_per_goal` (how many poses get bundled into each Nav2 goal)
+
+You can also poke individual nodes:
+
+```bash
+# Replan on-the-fly (refreshes the latched topic)
+ros2 service call /coverage_planner/replan_coverage std_srvs/srv/Trigger
+
+# Inspect the generated path
+ros2 topic echo /coverage_plan
+```
+
+See `NAVIGATION_GUIDE.md` for the recommended Nav2 bring-up sequence and recovery behaviors to pair with this pipeline.
+
+### Exploration-first gating
+
+`ros2 launch GigaVacuumMobil full_cleaning.launch.py` now spins up the `patterns` package’s `pattern_manager` ahead of the coverage executor. The manager runs a tiny behavior tree (defaults to `exploration -> systematic_cleaning`), keeps pattern code under `src/patterns/patterns/<pattern_name>/`, and exposes both manual and automatic triggering modes. The exploration pattern watches `/stable_map`, validates that every boundary band is occupied, and drives gentle frontier goals until the map “seals”. Once it completes, `/map_ready` flips to `true` and the systematic-cleaning pattern toggles `/coverage_executor/start_coverage` + `/coverage_enable` so NavigateThroughPoses batches finally begin.
+
+Key launch knobs:
+- `exploration_enabled` (default `true`) toggles the entire pattern manager.
+- `pattern_auto_mode`, `pattern_sequence`, and `pattern_auto_start_delay` control whether the BT runs automatically or waits for manual commands.
+- `pattern_command_topic` / `pattern_status_topic` let you remap the control + status channels.
+- `coverage_enable_topic` wires additional consumers that want to listen for the cleaning start signal.
+- `exploration_edge_band`, `exploration_min_edge_fraction`, `exploration_frontier_clearance`, and `exploration_goal_timeout` tune the "map solid" criteria and how assertive the exploration phase should be.
+
+Pattern manager cheat sheet:
+
+```bash
+# Manual pattern trigger (default mode)
+ros2 topic pub /pattern_manager/command std_msgs/String "data: 'exploration'"
+ros2 topic pub /pattern_manager/command std_msgs/String "data: 'systematic_cleaning'"
+ros2 topic pub /pattern_manager/command std_msgs/String "data: 'stop'"
+
+# Advance the auto sequence via service
+ros2 service call /pattern_manager/advance_pattern std_srvs/srv/Trigger {}
+```
+
+Monitor `/pattern_manager/status` for BT-like traces, and drop any future behaviors under `src/patterns/patterns/<pattern>/` (each with its own `nodes/`, `scripts/`, etc.) so they stay human-friendly.
+
 ---
 
 ## Hardware Overview

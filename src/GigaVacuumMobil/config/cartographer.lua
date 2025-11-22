@@ -25,7 +25,7 @@ options = {
   provide_odom_frame = false,  -- Wheel odometry from diff_drive_controller
   publish_frame_projected_to_2d = true,
   use_pose_extrapolator = true,
-  use_odometry = true,  -- Use wheel odometry
+  use_odometry = false,
   use_nav_sat = false,
   use_landmarks = false,
   num_laser_scans = 1,
@@ -48,20 +48,28 @@ MAP_BUILDER.use_trajectory_builder_2d = true
 MAP_BUILDER.num_background_threads = 4
 
 TRAJECTORY_BUILDER_2D.min_range = 0.12
-TRAJECTORY_BUILDER_2D.max_range = 12.0
-TRAJECTORY_BUILDER_2D.missing_data_ray_length = 3.0
+TRAJECTORY_BUILDER_2D.max_range = 4.0
+TRAJECTORY_BUILDER_2D.missing_data_ray_length = 1.8
 TRAJECTORY_BUILDER_2D.use_imu_data = false
 TRAJECTORY_BUILDER_2D.use_online_correlative_scan_matching = true
-TRAJECTORY_BUILDER_2D.motion_filter.max_angle_radians = math.rad(0.1)
+TRAJECTORY_BUILDER_2D.motion_filter.max_angle_radians = math.rad(0.05)
+TRAJECTORY_BUILDER_2D.num_accumulated_range_data = 1
 
 -- Submaps
-TRAJECTORY_BUILDER_2D.submaps.num_range_data = 90
-TRAJECTORY_BUILDER_2D.submaps.grid_options_2d.resolution = 0.05
+TRAJECTORY_BUILDER_2D.submaps.num_range_data = 70
+TRAJECTORY_BUILDER_2D.submaps.grid_options_2d.resolution = 0.04
+TRAJECTORY_BUILDER_2D.submaps.range_data_inserter = TRAJECTORY_BUILDER_2D.submaps.range_data_inserter or {}
+TRAJECTORY_BUILDER_2D.submaps.range_data_inserter.range_data_inserter_type = "PROBABILITY_GRID_INSERTER_2D"
+TRAJECTORY_BUILDER_2D.submaps.range_data_inserter.probability_grid_range_data_inserter =
+  TRAJECTORY_BUILDER_2D.submaps.range_data_inserter.probability_grid_range_data_inserter or {}
+TRAJECTORY_BUILDER_2D.submaps.range_data_inserter.probability_grid_range_data_inserter.hit_probability = 0.75
+TRAJECTORY_BUILDER_2D.submaps.range_data_inserter.probability_grid_range_data_inserter.miss_probability = 0.35
+TRAJECTORY_BUILDER_2D.submaps.range_data_inserter.probability_grid_range_data_inserter.insert_free_space = true
 
 -- Scan matching
 TRAJECTORY_BUILDER_2D.ceres_scan_matcher.occupied_space_weight = 10.0
-TRAJECTORY_BUILDER_2D.ceres_scan_matcher.translation_weight = 1.0
-TRAJECTORY_BUILDER_2D.ceres_scan_matcher.rotation_weight = 1.0
+TRAJECTORY_BUILDER_2D.ceres_scan_matcher.translation_weight = 2.0
+TRAJECTORY_BUILDER_2D.ceres_scan_matcher.rotation_weight = 2.0
 
 -- Loop closure
 POSE_GRAPH.optimize_every_n_nodes = 90
